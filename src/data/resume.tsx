@@ -44,7 +44,7 @@ export const DATA: DataType = {
   locationLink: "https://www.bknmu.edu.in/",
   description: "Full-stack web developer,<br />and tech enthusiast.",
   summary:
-"I’m a MERN stack developer with a passion for building dynamic and responsive web applications. Lately, I’ve started exploring Java and Spring Boot to strengthen my backend skills and broaden my development expertise. I enjoy learning new technologies, solving problems, and building projects that combine creativity with functionality.",  avatarUrl: "/image11.jpg",
+"I’m a MERN stack developer with a passion for building dynamic and responsive web applications. Lately, I’ve started exploring Java and Spring Boot to strengthen my backend skills and broaden my development expertise. I enjoy learning new technologies, solving problems, and building projects that combine creativity with functionality.",  avatarUrl: "/my.jpg",
   skills: [
     "HTML",
     "CSS",
