@@ -58,6 +58,7 @@ export const DATA: DataType = {
     "Express.js",
     "MongoDB",
     "PostgreSQL",
+    "Zustand",
     "Clerk",
     "Java",
     "JDBC","Git/GitHub",
@@ -65,7 +66,7 @@ export const DATA: DataType = {
     "Postman",
     "VS Code",
   ],
-  resumeUrl: "/ali-sorathiya.pdf",
+  resumeUrl: "/as_resume.pdf",
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
 
