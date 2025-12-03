@@ -58,7 +58,7 @@ export const DATA: DataType = {
     "Express.js",
     "MongoDB",
     "PostgreSQL",
-    "Neon",
+    "Neon Db",
     "Zustand",
     "Clerk",
     "Java",
