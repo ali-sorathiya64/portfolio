@@ -70,7 +70,7 @@ export const DATA: DataType = {
     "Postman",
     "VS Code",
   ],
-  resumeUrl: "/as_resume.pdf",
+  resumeUrl: "/a_resume.pdf",
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
 
