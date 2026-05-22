@@ -113,11 +113,7 @@ export const DATA: DataType = {
   },
 
   work: [
-    {
-      company: "Tech Solutions Inc.",
-      href: "https://techsolutions.example.com",
-      position: "Junior Web Developer",
-    }
+
   ],
   education: [
     {
