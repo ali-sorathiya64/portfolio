@@ -65,6 +65,7 @@ export const DATA: DataType = {
     "Neon Db",
     "Clerk",
     "Java",
+    "Swagger", 
     "Git/GitHub",
     "Vercel",
     "Postman",
