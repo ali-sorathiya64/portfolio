@@ -50,7 +50,7 @@ export const DATA: DataType = {
     "CSS",
     "Javascript",
     "TypeScript",
-    "React",
+    "React.js",
     "Tailwind CSS",
     "ShadcnUI",
     "Node.js",
