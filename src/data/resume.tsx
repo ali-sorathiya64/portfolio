@@ -39,7 +39,7 @@ interface DataType {
 export const DATA: DataType = {
   name: "Ali Sorathiya",
   initials: "AS",
-  url: "", // Added for build fix
+  url: "",
   location: "Gujarat, Junagadh, India",
   locationLink: "https://www.bknmu.edu.in/",
   description: "Full-Stack Web Developer | Backend Enthusiast.",
