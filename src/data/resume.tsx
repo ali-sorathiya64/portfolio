@@ -66,6 +66,7 @@ export const DATA: DataType = {
     "Gen AI ",
     "Langchain",
     "Vector DB",
+    "Claude",
     "DTO",
     "Clerk",
     "Java",
