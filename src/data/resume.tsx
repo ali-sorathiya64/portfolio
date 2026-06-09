@@ -2,7 +2,6 @@ import { Icons, IconProps } from "@/components/icons";
 import { HomeIcon, NotebookIcon } from "lucide-react";
 import { LucideIcon } from "lucide-react";
 
-
 type CustomIcon = (props: IconProps) => JSX.Element;
 
 interface SocialLink {
@@ -39,7 +38,7 @@ interface DataType {
 export const DATA: DataType = {
   name: "Ali Sorathiya",
   initials: "AS",
-  url: "", // Added for build fix
+  url: "",
   location: "Gujarat, Junagadh, India",
   locationLink: "https://www.bknmu.edu.in/",
   description: "Full-Stack Web Developer | Backend Enthusiast.",
@@ -51,12 +50,12 @@ avatarUrl: "/mine2.jpg",
     "CSS",
     "Javascript",
     "TypeScript",
-    "React",
+    "React.js",
     "Tailwind CSS",
     "ShadcnUI",
     "Node.js",
     "Express.js",
-    "Spring boot",
+    "Spring Boot",
     "Spring Data JPA",
     "Spring Security",
     "Docker",
@@ -64,9 +63,17 @@ avatarUrl: "/mine2.jpg",
     "MongoDB",
     "PostgreSQL",
     "Neon Db",
+    "Gen AI ",
+    "Langchain",
+    "Vector DB",
+    "Claude",
+    "DTO",
     "Clerk",
     "Java",
+    "Swagger", 
     "Git/GitHub",
+    "GitHub Actions",
+    "CI/CD",
     "Vercel",
     "Postman",
     "VS Code",
