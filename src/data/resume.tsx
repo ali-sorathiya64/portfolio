@@ -72,7 +72,7 @@ export const DATA: DataType = {
     "Swagger", 
     "Git/GitHub",
     "GitHub Actions",
-    "CI|CD",
+    "CI/CD",
     "Vercel",
     "Postman",
     "VS Code",
