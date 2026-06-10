@@ -41,7 +41,7 @@ export const DATA: DataType = {
   url: "",
   location: "Gujarat, Junagadh, India",
   locationLink: "https://www.bknmu.edu.in/",
-  description: "Full-Stack Web Developer | Backend Enthusiast.",
+  description: "Backend Developer | Java, Spring Boot, Node.js, LLMs & RAG",
   summary:
 "Backend-focused Developer with experience in Java, Spring Boot, Node.js, and MongoDB. I enjoy building APIs, working with databases, implementing authentication systems, and understanding how backend applications work behind the scenes. Alongside backend development, I am exploring Generative AI technologies such as LLMs, RAG pipelines, vector databases, and AI-powered applications while continuously improving my problem-solving skills through hands-on projects.",  
 avatarUrl: "/mine2.jpg",
