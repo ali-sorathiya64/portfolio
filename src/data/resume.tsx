@@ -43,7 +43,7 @@ export const DATA: DataType = {
   locationLink: "https://www.bknmu.edu.in/",
   description: "Full-Stack Web Developer | Backend Enthusiast.",
   summary:
-"I’m a developer with experience in building web applications using the MERN stack, with a growing focus on backend development. I’m currently improving my skills in Java and Spring Boot to better understand how backend systems are structured and work in real applications.I enjoy learning how things work behind the scenes, solving logical problems, and building projects that help me grow step by step as a backend-focused developer.",  
+"Backend-focused Developer with experience in Java, Spring Boot, Node.js, and MongoDB. I enjoy building APIs, working with databases, implementing authentication systems, and understanding how backend applications work behind the scenes. Alongside backend development, I am exploring Generative AI technologies such as LLMs, RAG pipelines, vector databases, and AI-powered applications while continuously improving my problem-solving skills through hands-on projects.",  
 avatarUrl: "/mine2.jpg",
   skills: [
     "Javascript",
