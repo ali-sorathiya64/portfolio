@@ -74,7 +74,7 @@ avatarUrl: "/mine2.jpg",
     "CI/CD",
     "Vercel",
     "Postman",
-    "VS Code",
+    "Render",
   ],
   resumeUrl: "/as_resume.pdf",
   navbar: [
