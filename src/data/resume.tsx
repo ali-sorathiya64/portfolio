@@ -46,8 +46,6 @@ export const DATA: DataType = {
 "I’m a developer with experience in building web applications using the MERN stack, with a growing focus on backend development. I’m currently improving my skills in Java and Spring Boot to better understand how backend systems are structured and work in real applications.I enjoy learning how things work behind the scenes, solving logical problems, and building projects that help me grow step by step as a backend-focused developer.",  
 avatarUrl: "/mine2.jpg",
   skills: [
-    "HTML",
-    "CSS",
     "Javascript",
     "TypeScript",
     "React.js",
