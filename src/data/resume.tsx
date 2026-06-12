@@ -57,7 +57,7 @@ avatarUrl: "/mine2.jpg",
     "Spring Security",
     "Docker",
     "Rabbit MQ",
-    "AWS(exposure)"
+    "AWS(exposure)",
     "MongoDB",
     "PostgreSQL",
     "Neon Db",
