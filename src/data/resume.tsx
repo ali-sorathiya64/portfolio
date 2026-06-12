@@ -43,7 +43,7 @@ export const DATA: DataType = {
   locationLink: "https://www.bknmu.edu.in/",
   description: "Backend Developer | Java, Spring Boot, Node.js, LLMs & RAG",
   summary:
-"Backend-focused Developer with experience in Java, Spring Boot, Node.js, and Postgresql, MongoDB. I enjoy building APIs, working with databases, implementing authentication systems, and understanding how backend applications work behind the scenes. Alongside backend development, I am exploring Generative AI technologies such as LLMs, RAG pipelines, vector databases, and AI-powered applications while continuously improving my problem-solving skills through hands-on projects.",  
+"Backend-focused Developer with experience in Java, Spring Boot, Node.js, and PostgreSQL/MongoDB. I enjoy building APIs, working with databases, implementing authentication systems, and understanding how backend applications work behind the scenes. Alongside backend development, I am exploring Generative AI technologies such as LLMs, RAG pipelines, vector databases, and AI-powered applications. I also have hands-on experience with Docker, GitHub Actions, and basic CI/CD workflows through personal projects, while continuously improving my problem-solving and development skills.",  
 avatarUrl: "/mine2.jpg",
   skills: [
     "Javascript",
@@ -58,6 +58,7 @@ avatarUrl: "/mine2.jpg",
     "Spring Security",
     "Docker",
     "Rabbit MQ",
+    "AWS(exposure)"
     "MongoDB",
     "PostgreSQL",
     "Neon Db",
