@@ -10,7 +10,6 @@ interface SocialLink {
   icon: CustomIcon;
   navbar: boolean;
 }
-
 interface ContactType {
   email: string;
   tel: string;
