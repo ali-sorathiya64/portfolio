@@ -76,7 +76,7 @@ avatarUrl: "/mine2.jpg",
     "Postman",
     "Render",
   ],
-  resumeUrl: "/as-resume.pdf",
+  resumeUrl: "/as__resume.pdf",
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
 
@@ -135,7 +135,7 @@ projects: [
   {
     title: "QuickAi – AI Content Creation Platform",
     href: "https://quick-ai-studio-saas.vercel.app/",
-    dates: "2025",
+    dates: "2026",
     active: true,
     description:
       "QuickAi is a powerful AI-driven content creation platform that enables users to write articles, generate images, remove backgrounds/objects, and summarize documents in seconds. It includes features like AI Article Writer, Blog Title Generator, Image Generation, Resume Review, Background/Object Removal, and more. The platform also provides testimonials, pricing plans, and newsletter subscription to create a complete SaaS experience.",
@@ -167,7 +167,7 @@ projects: [
   {
     title: "MediConnect – AI-Powered Healthcare Platform",
     href: "https://medi-connect-ai-powered-healthcare.vercel.app/",
-    dates: "2025",
+    dates: "2026",
     active: true,
     description:
       "MediConnect is an advanced healthcare platform designed to simplify access to medical services with AI-powered health insights, patient portals, and real-time hospital search. The system offers 24/7 support, predictive analytics, secure data handling, appointment management, and direct communication with healthcare providers. Built to scale from small clinics to large hospitals, MediConnect delivers a modern, user-friendly healthcare experience for both patients and professionals.",
