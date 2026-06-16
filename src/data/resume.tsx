@@ -90,7 +90,6 @@ avatarUrl: "/mine2.jpg",
         name: "GitHub",
         url: "https://github.com/ali-sorathiya64",
         icon: Icons.github,
-
         navbar: true,
       },
       LinkedIn: {
