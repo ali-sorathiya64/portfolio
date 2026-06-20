@@ -81,6 +81,7 @@ avatarUrl: "/mine2.jpg",
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
 
+
     { href: "/blog", icon: NotebookIcon, label: "Blog" },
   ],
   contact: {
