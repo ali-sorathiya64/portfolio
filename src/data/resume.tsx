@@ -9,6 +9,7 @@ interface SocialLink {
   url: string;
   icon: CustomIcon;
   navbar: boolean;
+
 }
 interface ContactType {
   email: string;
