@@ -9,6 +9,7 @@ interface SocialLink {
   url: string;
   icon: CustomIcon;
   navbar: boolean;
+
 }
 interface ContactType {
   email: string;
@@ -36,7 +37,7 @@ interface DataType {
 
 export const DATA: DataType = {
   name: "Ali Sorathiya",
-  initials: "AS",
+  initials:"AS",
   url: "",
   location: "Gujarat, Junagadh, India",
   locationLink: "https://www.bknmu.edu.in/",
@@ -62,6 +63,7 @@ avatarUrl: "/mine2.jpg",
     "Gen AI ",
     "Langchain",
     "Vector DB",
+    "Pinecone",
     "Claude",
     "React.js",
     "Tailwind CSS",
@@ -80,6 +82,7 @@ avatarUrl: "/mine2.jpg",
   resumeUrl: "/as_resume.pdf",
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
+
 
     { href: "/blog", icon: NotebookIcon, label: "Blog" },
   ],
