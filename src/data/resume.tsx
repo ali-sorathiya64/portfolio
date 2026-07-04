@@ -79,7 +79,7 @@ avatarUrl: "/mine2.jpg",
     "Postman",
     "Render",
   ],
-  resumeUrl: "/a_resume.pdf",
+  resumeUrl: "/as_resume.pdf",
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
 
