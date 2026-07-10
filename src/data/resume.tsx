@@ -137,38 +137,6 @@ avatarUrl: "/mine2.jpg",
   ],
 projects: [
    {
-    title: "TripAI – AI-Powered Travel Itinerary Generator",
-    href: "https://travel-itinerary-generator-ai.vercel.app/",
-    dates: "2026",
-    active: true,
-    description:
-      "A MERN-based app that lets users upload travel booking documents (flight tickets, hotel bookings) and automatically generates a structured AI-powered itinerary using OCR + LLM extraction. Includes JWT auth with OTP verification, drag-and-drop document upload, OCR (Tesseract.js) + PDF parsing, AI itinerary generation via OpenRouter, shareable public itinerary links, and client-side PDF export.",
-    technologies: [
-      "React",
-      "Tailwind CSS",
-      "Node.js",
-      "Express.js",
-      "MongoDB",
-      "JWT Auth",
-      "Tesseract.js",
-      "Cloudinary",
-      "OpenRouter",
-    ],
-    links: [
-      {
-        type: "Link",
-        href: "https://travel-itinerary-generator-ai.vercel.app/",
-        icon: <Icons.globe className="size-3" />,
-      },
-      {
-        type: "Source",
-        href: "https://github.com/ali-sorathiya64/ai-travel-itinerary-generator/",
-        icon: <Icons.github className="size-3" />,
-      },
-    ],
-    image: "/dashboard.jpg", 
-  },
-  {
     title: "QuickAi – AI Content Creation Platform",
     href: "https://quick-ai-studio-saas.vercel.app/",
     dates: "2026",
@@ -200,6 +168,39 @@ projects: [
     ],
     image: "/quick.png",
   },
+   {
+    title: "TripAI – AI-Powered Travel Itinerary Generator",
+    href: "https://travel-itinerary-generator-ai.vercel.app/",
+    dates: "2026",
+    active: true,
+    description:
+      "A MERN-based app that lets users upload travel booking documents (flight tickets, hotel bookings) and automatically generates a structured AI-powered itinerary using OCR + LLM extraction. Includes JWT auth with OTP verification, drag-and-drop document upload, OCR (Tesseract.js) + PDF parsing, AI itinerary generation via OpenRouter, shareable public itinerary links, and client-side PDF export.",
+    technologies: [
+      "React",
+      "Tailwind CSS",
+      "Node.js",
+      "Express.js",
+      "MongoDB",
+      "JWT Auth",
+      "Tesseract.js",
+      "Cloudinary",
+      "OpenRouter",
+    ],
+    links: [
+      {
+        type: "Link",
+        href: "https://travel-itinerary-generator-ai.vercel.app/",
+        icon: <Icons.globe className="size-3" />,
+      },
+      {
+        type: "Source",
+        href: "https://github.com/ali-sorathiya64/ai-travel-itinerary-generator/",
+        icon: <Icons.github className="size-3" />,
+      },
+    ],
+    image: "/dashboard.jpg", 
+  },
+ 
   {
     title: "AI Resume Reviewer Agent",
     dates: "2026",
@@ -221,7 +222,7 @@ projects: [
         icon: <Icons.github className="size-3" />,
       },
     ],
-    image: "/resumereviewer.png",
+    image: "/workflow.jpg",
   },
   {
     title: "Fitness Tracker – Spring Boot Monolith",
@@ -246,7 +247,7 @@ projects: [
         icon: <Icons.github className="size-3" />,
       },
     ],
-    image: "/fitnesstracker.png",
+    image: "/swagger-api.jpg",
   },
   {
     title: "MediConnect – AI-Powered Healthcare Platform",
