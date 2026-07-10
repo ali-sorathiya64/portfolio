@@ -166,7 +166,7 @@ projects: [
         icon: <Icons.github className="size-3" />,
       },
     ],
-    image: "/tripai.png", 
+    image: "/dashboard.jpg", 
   },
   {
     title: "QuickAi – AI Content Creation Platform",
