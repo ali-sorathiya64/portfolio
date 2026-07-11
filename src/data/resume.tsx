@@ -151,7 +151,7 @@ projects: [
       "Cloudinary",
       "Clerk",
       "PostgreSQL",
-      "Neon DB"
+      "Neon DB",
       "PreBuilt UI",
       "Gemini API"
     ],
