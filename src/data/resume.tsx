@@ -150,7 +150,8 @@ projects: [
       "Express.js",
       "Cloudinary",
       "Clerk",
-      "MongoDB",
+      "PostgreSQL",
+      "Neon DB"
       "PreBuilt UI",
       "Gemini API"
     ],
