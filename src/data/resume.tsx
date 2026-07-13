@@ -47,40 +47,58 @@ export const DATA: DataType = {
 "Backend Developer with experience in JavaScript/TypeScript, Node.js, Express.js, NestJS, Spring Boot, PostgreSQL, and MongoDB. I enjoy building REST APIs, authentication systems, backend applications, and working with databases. Familiar with React for integrating backend services and building full-stack applications, and have used AI-assisted workflows to accelerate frontend development. Currently exploring Generative AI technologies, including LLMs, RAG pipelines, vector databases, and AI-powered applications. Experienced with Docker, GitHub Actions, and CI/CD workflows through hands-on projects, while continuously improving my backend development skills.",  
 avatarUrl: "/mine2.jpg",
   skills: [
-    "Javascript",
-    "TypeScript",
-    "Node.js",
-    "Express.js",
-    "Nest.js",
-    "Spring Boot",
-    "Spring Data JPA",
-    "Spring Security",
-    "Docker",
-    "Rabbit MQ",
-    "AWS (Exposure)",
-    "MongoDB",
-    "PostgreSQL",
-    "Redis",
-    "Neon Db",
-    "Gen AI ",
-    "Langchain",
-    "Vector DB",
-    "Pinecone",
-    "Claude",
-    "React.js",
-    "Tailwind CSS",
-    "ShadcnUI",
-    "DTO",
-    "Clerk",
-    "Java",
-    "Swagger", 
-    "Git/GitHub",
-    "GitHub Actions",
-    "CI/CD",
-    "Vercel",
-    "Postman",
-    "Render",
-  ],
+  // Programming Languages
+  "JavaScript",
+  "TypeScript",
+  "Java",
+
+  // Backend
+  "Node.js",
+  "Express.js",
+  "NestJS",
+  "Spring Boot",
+  "Spring Data JPA",
+  "Spring Security",
+  "DTO",
+
+  // Databases & Caching
+  "MongoDB",
+  "PostgreSQL",
+  "Neon DB",
+  "Redis",
+  "Vector DB",
+  "Pinecone",
+
+  // AI
+  "Gen AI",
+  "LangChain",
+  "Claude",
+
+  // Messaging
+  "RabbitMQ",
+
+  // Frontend (Exposure)
+  "React.js",
+  "Tailwind CSS",
+  "Shadcn/UI",
+  "Clerk",
+
+  // DevOps & Cloud
+  "Docker",
+  "GitHub Actions",
+  "CI/CD",
+  "AWS (Basics)",
+  "Vercel",
+  "Render",
+
+  // API & Documentation
+  "Swagger",
+  "Postman",
+
+  // Version Control
+  "Git",
+  "GitHub",
+]
   resumeUrl: "/as_resume.pdf",
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
