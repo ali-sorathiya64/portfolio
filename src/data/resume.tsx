@@ -98,7 +98,7 @@ avatarUrl: "/mine2.jpg",
   // Version Control
   "Git",
   "GitHub",
-]
+],
   resumeUrl: "/as_resume.pdf",
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
