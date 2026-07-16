@@ -12,7 +12,6 @@ interface SocialLink {
 
 }
 
-
 interface ContactType {
   email: string;
   tel: string;
