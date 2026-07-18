@@ -10,7 +10,6 @@ import Link from "next/link";
 import Markdown from "react-markdown";
 import { Button } from "@/components/ui/button";
 
-
 const BLUR_FADE_DELAY = 0.04;
 
 export default function Page() {
@@ -63,17 +62,30 @@ export default function Page() {
       </section>
 
       <section id='skills'>
-        <div className='flex min-h-0 flex-col gap-y-3'>
+        <div className='flex min-h-0 flex-col gap-y-5'>
           <BlurFade delay={BLUR_FADE_DELAY * 9}>
             <h2 className='text-xl font-bold'>Skills</h2>
           </BlurFade>
-          <div className='flex flex-wrap gap-1'>
-            {DATA.skills.map((skill, id) => (
-              <BlurFade key={skill} delay={BLUR_FADE_DELAY * 10 + id * 0.05}>
-                <Badge>{skill}</Badge>
+
+          {DATA.skills.map((group, groupId) => (
+            <div key={group.category} className='flex flex-col gap-y-2'>
+              <BlurFade delay={BLUR_FADE_DELAY * 10 + groupId * 0.1}>
+                <h3 className='text-sm font-semibold text-muted-foreground'>
+                  {group.category}
+                </h3>
               </BlurFade>
-            ))}
-          </div>
+              <div className='flex flex-wrap gap-1'>
+                {group.items.map((skill, id) => (
+                  <BlurFade
+                    key={skill}
+                    delay={BLUR_FADE_DELAY * 10 + groupId * 0.1 + id * 0.03}
+                  >
+                    <Badge>{skill}</Badge>
+                  </BlurFade>
+                ))}
+              </div>
+            </div>
+          ))}
         </div>
       </section>
 
@@ -155,17 +167,17 @@ export default function Page() {
                 Get in Touch
               </h2>
 
-            <p className='mx-auto max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed'>
-  Want to chat? Feel free to reach out to me anytime via{" "}
-  <a
-    href={`mailto:${DATA.contact.email}`}
-    className='text-blue-500 hover:underline'
-  >
-    Email
-  </a>
-  .
-</p>
-    </div>
+              <p className='mx-auto max-w-[600px] text-muted-foreground md:text-xl/relaxed lg:text-base/relaxed xl:text-xl/relaxed'>
+                Want to chat? Feel free to reach out to me anytime via{" "}
+                <a
+                  href={`mailto:${DATA.contact.email}`}
+                  className='text-blue-500 hover:underline'
+                >
+                  Email
+                </a>
+                .
+              </p>
+            </div>
           </BlurFade>
         </div>
       </section>
