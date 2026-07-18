@@ -99,7 +99,7 @@ avatarUrl: "/mine2.jpg",
   "Git",
   "GitHub",
 ],
-  resumeUrl: "/as_resume.pdf",
+  resumeUrl: "/as-resume.pdf",
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
 
