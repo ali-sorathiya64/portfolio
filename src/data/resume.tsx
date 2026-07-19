@@ -53,7 +53,7 @@ export const DATA: DataType = {
   skills: [
     {
       category: "Languages",
-      items: ["JavaScript", "TypeScript", "Java","SQL"],
+      items: ["C", "JavaScript", "TypeScript", "Java","SQL"],
     },
     {
       category: "Backend",
