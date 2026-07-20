@@ -69,11 +69,11 @@ export const DATA: DataType = {
     },
     {
       category: "Databases & Caching",
-      items: ["MongoDB", "PostgreSQL", "Neon DB", "Redis", "Vector DB", "Pinecone"],
+      items: ["MongoDB", "PostgreSQL", "Redis", "Neon DB", "Vector DB", "Pinecone"],
     },
     {
       category: "AI / Gen AI",
-      items: ["Gen AI", "RAG", "LangChain", "LLM integration", "Claude"],
+      items: ["Gen AI", "RAG", "Langchain", "LLM integration", "Claude"],
     },
     {
       category: "Messaging",
@@ -209,6 +209,30 @@ export const DATA: DataType = {
       ],
       image: "/dashboard.jpg",
     },
+    {
+  title: "Learning Management System (LMS) Backend",
+  dates: "2026",
+  active: true,
+  description:
+    "A modular Learning Management System backend built with NestJS and MongoDB. Implements JWT-based authentication, role-based authorization for admins and users, course management APIs, DTO-based request validation, Mongoose integration, and Dockerized deployment. Designed using NestJS modules, controllers, and services to build a clean and maintainable REST API.",
+  technologies: [
+    "NestJS",
+    "TypeScript",
+    "MongoDB",
+    "Mongoose",
+    "JWT",
+    "Docker",
+    "DTO",
+  ],
+  links: [
+    {
+      type: "Source",
+      href: "https://github.com/ali-sorathiya64/nest-js-lms-backend",
+      icon: <Icons.github className="size-3" />,
+    },
+  ],
+  image: "/nest-js-lms.png",
+},
     {
       title: "AI Resume Reviewer Agent",
       dates: "2026",
