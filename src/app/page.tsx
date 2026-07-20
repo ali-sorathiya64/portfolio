@@ -4,39 +4,12 @@ import BlurFadeText from "@/components/magicui/blur-fade-text";
 import { ProjectCard } from "@/components/project-card";
 import { ResumeCard } from "@/components/resume-card";
 import { Avatar, AvatarFallback, AvatarImage } from "@/components/ui/avatar";
-import { Badge } from "@/components/ui/badge";
 import { DATA } from "@/data/resume";
 import Link from "next/link";
 import Markdown from "react-markdown";
 import { Button } from "@/components/ui/button";
-import {
-  Code2,
-  Server,
-  Database,
-  Sparkles,
-  Radio,
-  Layout,
-  Cloud,
-  FileJson,
-  GitBranch,
-  type LucideIcon,
-} from "lucide-react";
 
 const BLUR_FADE_DELAY = 0.04;
-
-// Small icon + accent colour per skill category — purely decorative,
-// no external images, no network calls.
-const CATEGORY_META: Record<string, { icon: LucideIcon; accent: string }> = {
-  Languages: { icon: Code2, accent: "from-yellow-500/10 to-transparent" },
-  Backend: { icon: Server, accent: "from-green-500/10 to-transparent" },
-  "Databases & Caching": { icon: Database, accent: "from-blue-500/10 to-transparent" },
-  "AI / Gen AI": { icon: Sparkles, accent: "from-purple-500/10 to-transparent" },
-  Messaging: { icon: Radio, accent: "from-orange-500/10 to-transparent" },
-  Frontend: { icon: Layout, accent: "from-cyan-500/10 to-transparent" },
-  "DevOps & Cloud": { icon: Cloud, accent: "from-sky-500/10 to-transparent" },
-  "API & Docs": { icon: FileJson, accent: "from-pink-500/10 to-transparent" },
-  "Version Control": { icon: GitBranch, accent: "from-red-500/10 to-transparent" },
-};
 
 export default function Page() {
   return (
@@ -93,45 +66,88 @@ export default function Page() {
             <h2 className='text-xl font-bold'>Skills</h2>
           </BlurFade>
 
-          <div className='grid grid-cols-1 sm:grid-cols-2 gap-3'>
-            {DATA.skills.map((group, groupId) => {
-              const meta = CATEGORY_META[group.category];
-              const Icon = meta?.icon ?? Code2;
+          <BlurFade delay={BLUR_FADE_DELAY * 9.5}>
+            <div className='rounded-xl border border-zinc-800 bg-zinc-950 overflow-hidden shadow-lg'>
+              {/* fake terminal titlebar */}
+              <div className='flex items-center gap-1.5 px-4 py-2.5 border-b border-zinc-800 bg-zinc-900'>
+                <span className='size-2.5 rounded-full bg-red-500' />
+                <span className='size-2.5 rounded-full bg-yellow-500' />
+                <span className='size-2.5 rounded-full bg-green-500' />
+                <span className='ml-3 text-xs font-mono text-zinc-500'>
+                  {DATA.name.toLowerCase().replace(" ", "-")}@portfolio: ~/skills
+                </span>
+              </div>
 
-              return (
-                <BlurFade
-                  key={group.category}
-                  delay={BLUR_FADE_DELAY * 10 + groupId * 0.08}
-                >
-                  <div
-                    className={`group relative overflow-hidden rounded-xl border bg-gradient-to-br ${
-                      meta?.accent ?? "from-muted/40 to-transparent"
-                    } p-4 transition-all duration-300 hover:border-foreground/30 hover:shadow-md`}
-                  >
-                    <div className='flex items-center gap-2 mb-3'>
-                      <div className='flex items-center justify-center size-7 rounded-md bg-foreground text-background shrink-0'>
-                        <Icon className='size-4' />
+              <div className='px-4 pt-4 pb-2 font-mono text-xs'>
+                <span className='text-zinc-600'>$</span>{" "}
+                <span className='text-green-400'>cat ./stack --all</span>
+              </div>
+
+              <div className='flex flex-col gap-4 pb-6 pt-2'>
+                {DATA.skills.map((group, groupId) => {
+                  const direction = groupId % 2 === 0 ? "marquee-left" : "marquee-right";
+                  const duration = 16 + (group.items.length % 5) * 2.5;
+
+                  return (
+                    <div key={group.category} className='flex flex-col gap-1.5'>
+                      <div className='px-4 font-mono text-[11px] uppercase tracking-wider text-zinc-500'>
+                        // {group.category}
                       </div>
-                      <h3 className='text-sm font-semibold'>{group.category}</h3>
-                    </div>
 
-                    <div className='flex flex-wrap gap-1.5'>
-                      {group.items.map((skill) => (
-                        <Badge
-                          key={skill}
-                          variant='secondary'
-                          className='transition-transform duration-150 hover:scale-105 hover:bg-foreground hover:text-background'
+                      <div
+                        className='relative overflow-hidden'
+                        style={{
+                          WebkitMaskImage:
+                            "linear-gradient(90deg, transparent, black 6%, black 94%, transparent)",
+                          maskImage:
+                            "linear-gradient(90deg, transparent, black 6%, black 94%, transparent)",
+                        }}
+                      >
+                        <div
+                          className='marquee-row flex w-max gap-2 px-4'
+                          style={{
+                            animationName: direction,
+                            animationDuration: `${duration}s`,
+                            animationTimingFunction: "linear",
+                            animationIterationCount: "infinite",
+                          }}
                         >
-                          {skill}
-                        </Badge>
-                      ))}
+                          {[...group.items, ...group.items].map((skill, i) => (
+                            <span
+                              key={`${skill}-${i}`}
+                              className='shrink-0 rounded-md border border-zinc-700 bg-zinc-900 px-3 py-1.5 font-mono text-xs text-zinc-200 transition-colors hover:border-green-400 hover:text-green-400'
+                            >
+                              {skill}
+                            </span>
+                          ))}
+                        </div>
+                      </div>
                     </div>
-                  </div>
-                </BlurFade>
-              );
-            })}
-          </div>
+                  );
+                })}
+              </div>
+
+              <div className='px-4 pb-4 font-mono text-xs text-zinc-600'>
+                <span className='text-zinc-600'>$</span>{" "}
+                <span className='animate-pulse'>▍</span>
+              </div>
+            </div>
+          </BlurFade>
         </div>
+
+        <style>{`
+          @keyframes marquee-left {
+            from { transform: translateX(0); }
+            to { transform: translateX(-50%); }
+          }
+          @keyframes marquee-right {
+            from { transform: translateX(-50%); }
+            to { transform: translateX(0); }
+          }
+          .marquee-row:hover {
+            animation-play-state: paused;
+          }
+        `}</style>
       </section>
 
       <section id='projects'>
