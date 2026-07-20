@@ -48,7 +48,7 @@ export const DATA: DataType = {
   locationLink: "https://www.bknmu.edu.in/",
   description: "Backend Developer | Node.js, Nest.js, Spring Boot, LLMs & RAG",
   summary:
-    "Backend Developer with experience in JavaScript/TypeScript, Node.js, Express.js, NestJS, Spring Boot, PostgreSQL, and MongoDB. I enjoy building REST APIs, authentication systems, backend applications, and working with databases. Familiar with React for integrating backend services and building full-stack applications, and have used AI-assisted workflows to accelerate frontend development. Currently exploring Generative AI technologies, including LLMs, RAG pipelines, vector databases, and AI-powered applications. Experienced with Docker, GitHub Actions, and CI/CD workflows through hands-on projects, while continuously improving my backend development skills.",
+    "Backend Developer with experience in JavaScript/TypeScript, Node.js, Express.js, Nest.js, Spring Boot, PostgreSQL, and MongoDB, Redis. I enjoy building REST APIs, authentication systems, backend applications, and working with databases. Familiar with React for integrating backend services and building full-stack applications, and have used AI-assisted workflows to accelerate frontend development. Currently exploring Generative AI technologies, including LLMs, RAG pipelines, vector databases, and AI-powered applications. Experienced with Docker, GitHub Actions, and CI/CD workflows through hands-on projects, while continuously improving my backend development skills.",
   avatarUrl: "/mine2.jpg",
   skills: [
     {
@@ -60,7 +60,7 @@ export const DATA: DataType = {
       items: [
         "Node.js",
         "Express.js",
-        "NestJS",
+        "Nest.js",
         "Spring Boot",
         "Spring Data JPA",
         "Spring Security",
