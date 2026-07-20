@@ -65,6 +65,7 @@ export const DATA: DataType = {
         "Spring Data JPA",
         "Spring Security",
         "DTO",
+        "RabbitMQ"
       ],
     },
     {
@@ -76,12 +77,8 @@ export const DATA: DataType = {
       items: ["Gen AI", "RAG", "Langchain", "LLM integration", "Claude"],
     },
     {
-      category: "Messaging",
-      items: ["RabbitMQ"],
-    },
-    {
       category: "Frontend",
-      items: ["React.js", "Tailwind CSS", "Shadcn/UI", "Framer Motion", "Clerk"],
+      items: ["React.js", "Tailwind CSS", "Shadcn/UI", "Prebuilt UI", "Clerk"],
     },
     {
       category: "DevOps & Cloud",
