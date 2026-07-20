@@ -11,6 +11,23 @@ import { Button } from "@/components/ui/button";
 
 const BLUR_FADE_DELAY = 0.04;
 
+// Minimum number of chips that should appear in one "half" of a marquee row
+// before it repeats — short categories (e.g. 1-2 skills) get padded out by
+// repeating their own items so the row never looks empty or jumps oddly.
+const MIN_CHIPS_PER_HALF = 7;
+// Seconds of scroll time per chip — keeps the visual speed consistent
+// across rows regardless of how many skills a category has.
+const SECONDS_PER_CHIP = 2.2;
+
+function buildMarqueeItems(items: string[]) {
+  const repeatCount = Math.max(1, Math.ceil(MIN_CHIPS_PER_HALF / items.length));
+  const half = Array.from({ length: repeatCount }, () => items).flat();
+  // duplicate the half so translateX(-50%) loops seamlessly
+  const full = [...half, ...half];
+  const duration = Math.round(half.length * SECONDS_PER_CHIP);
+  return { full, duration };
+}
+
 export default function Page() {
   return (
     <main className='flex flex-col min-h-[100dvh] space-y-10'>
@@ -86,7 +103,7 @@ export default function Page() {
               <div className='flex flex-col gap-4 pb-6 pt-2'>
                 {DATA.skills.map((group, groupId) => {
                   const direction = groupId % 2 === 0 ? "marquee-left" : "marquee-right";
-                  const duration = 16 + (group.items.length % 5) * 2.5;
+                  const { full, duration } = buildMarqueeItems(group.items);
 
                   return (
                     <div key={group.category} className='flex flex-col gap-1.5'>
@@ -112,7 +129,7 @@ export default function Page() {
                             animationIterationCount: "infinite",
                           }}
                         >
-                          {[...group.items, ...group.items].map((skill, i) => (
+                          {full.map((skill, i) => (
                             <span
                               key={`${skill}-${i}`}
                               className='shrink-0 rounded-md border border-zinc-700 bg-zinc-900 px-3 py-1.5 font-mono text-xs text-zinc-200 transition-colors hover:border-green-400 hover:text-green-400'
