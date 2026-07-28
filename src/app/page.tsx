@@ -8,15 +8,13 @@ import { DATA } from "@/data/resume";
 import Link from "next/link";
 import Markdown from "react-markdown";
 import { Button } from "@/components/ui/button";
+import { Download, Mail } from "lucide-react";
 
 const BLUR_FADE_DELAY = 0.04;
 
-// Categories with fewer skills than this just look repetitive/odd when
-// marquee'd (you only ever see the same 2-3 names loop past). Below this
-// threshold we render a plain static row instead of scrolling it.
+
 const MIN_ITEMS_FOR_MARQUEE = 5;
-// Seconds of scroll time per chip — keeps visual speed consistent across
-// rows regardless of how many skills a category has.
+
 const SECONDS_PER_CHIP = 2.2;
 
 function buildMarqueeItems(items: string[]) {
@@ -38,35 +36,68 @@ export default function Page() {
   return (
     <main className='flex flex-col min-h-[100dvh] space-y-10'>
       <section id='hero'>
-        <div className='mx-auto w-full max-w-2xl space-y-8'>
-          <div className='gap-2 flex justify-between'>
-            <div className='flex-col flex flex-1 space-y-1.5'>
+        <div className='mx-auto w-full max-w-2xl'>
+          <BlurFade delay={BLUR_FADE_DELAY}>
+            <div className='flex items-center gap-2 font-mono text-xs text-zinc-500'>
+              <span className='text-green-500'>➜</span>
+              <span>~/whoami</span>
+            </div>
+          </BlurFade>
+
+          <div className='mt-3 flex items-start justify-between gap-6'>
+            <div className='flex-1 space-y-3'>
               <BlurFadeText
-                delay={BLUR_FADE_DELAY}
-                className='text-3xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none'
+                delay={BLUR_FADE_DELAY * 2}
+                className='text-4xl font-bold tracking-tighter sm:text-5xl xl:text-6xl/none'
                 yOffset={8}
                 text={`Hi, I'm ${DATA.name.split(" ")[0]}`}
               />
 
               <BlurFadeText
-                className='max-w-[600px] md:text-xl'
-                delay={BLUR_FADE_DELAY}
+                className='max-w-[520px] text-pretty md:text-lg'
+                delay={BLUR_FADE_DELAY * 3}
                 text={DATA.description}
               />
 
-              {/* Download Resume Button */}
-              <BlurFade delay={BLUR_FADE_DELAY * 2}>
-                <a href={DATA.resumeUrl} download>
-                  <Button className='mt-4'>Download Resume</Button>
-                </a>
+              <BlurFade delay={BLUR_FADE_DELAY * 4}>
+                <div className='flex items-center gap-1.5 font-mono text-xs text-zinc-500'>
+                  <span className='relative flex size-2'>
+                    <span className='absolute inline-flex h-full w-full animate-ping rounded-full bg-green-400 opacity-75' />
+                    <span className='relative inline-flex size-2 rounded-full bg-green-500' />
+                  </span>
+                  open to backend / full-stack roles
+                </div>
+              </BlurFade>
+
+              <BlurFade delay={BLUR_FADE_DELAY * 5}>
+                <div className='flex flex-wrap gap-2 pt-2'>
+                  <a href={DATA.resumeUrl} download>
+                    <Button className='gap-1.5 rounded-md'>
+                      <Download className='size-3.5' />
+                      Download Resume
+                    </Button>
+                  </a>
+                  <a href={`mailto:${DATA.contact.email}`}>
+                    <Button variant='outline' className='gap-1.5 rounded-md'>
+                      <Mail className='size-3.5' />
+                      Get in touch
+                    </Button>
+                  </a>
+                </div>
               </BlurFade>
             </div>
 
             <BlurFade delay={BLUR_FADE_DELAY}>
-              <Avatar className='size-28 border'>
-                <AvatarImage alt={DATA.name} src={DATA.avatarUrl} />
-                <AvatarFallback>{DATA.initials}</AvatarFallback>
-              </Avatar>
+              <div className='relative shrink-0'>
+                <div className='absolute -inset-1 rounded-full border border-dashed border-zinc-300 dark:border-zinc-700' />
+                <Avatar className='size-28 border-2 border-background shadow-sm ring-1 ring-zinc-200 dark:ring-zinc-800'>
+                  <AvatarImage alt={DATA.name} src={DATA.avatarUrl} />
+                  <AvatarFallback>{DATA.initials}</AvatarFallback>
+                </Avatar>
+                <span className='absolute bottom-1 right-1 flex size-4 items-center justify-center rounded-full border-2 border-background bg-green-500'>
+                  <span className='sr-only'>Available</span>
+                </span>
+              </div>
             </BlurFade>
           </div>
         </div>
