@@ -10,8 +10,8 @@ const RESPONSE_LINES = [
   '  "role": "Backend Developer",',
   '  "stack": ["Node.js", "Nest.js", "Spring Boot", "PostgreSQL"],',
   '  "focus": "LLMs, RAG pipelines, vector search",',
-  '  "status": "available_for_hire",',
-  '  "avg_response_hrs": 4',
+  '  "based_in": "Gujarat, India",',
+  '  "shipped_projects": 7',
   "}",
 ];
 
