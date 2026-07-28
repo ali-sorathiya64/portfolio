@@ -8,10 +8,8 @@ const RESPONSE_LINES = [
   "{",
   '  "name": "Ali Sorathiya",',
   '  "role": "Backend Developer",',
-  '  "stack": ["Node.js", "Nest.js", "Spring Boot", "PostgreSQL"],',
-  '  "focus": "LLMs, RAG pipelines, vector search",',
-  '  "based_in": "Gujarat, India",',
-  '  "shipped_projects": 7',
+  '  "skills": ["Node.js", "Nest.js", "Spring Boot", "Microservices"],',
+  '  "learning": "Generative AI & RAG, AWS, System Design"',
   "}",
 ];
 
@@ -114,7 +112,10 @@ export function TerminalWhoami() {
         </div>
 
         {commandDone && (
-          <div className="mt-2">
+          <div className="mt-3">
+            <div className="mb-2 text-zinc-600">
+              HTTP/1.1 <span className="text-emerald-400">200 OK</span>
+            </div>
             {RESPONSE_LINES.slice(0, visibleLines).map((line, i) =>
               highlightLine(line, i)
             )}
