@@ -2,7 +2,7 @@
 
 import { useEffect, useState, type ReactNode } from "react";
 
-const COMMAND = "curl https://ali.dev/api/v1/whoami";
+const COMMAND = "curl https://aliportfolioapp.vercel.app/api/whoami";
 
 const RESPONSE_LINES = [
   "{",
