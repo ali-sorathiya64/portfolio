@@ -8,7 +8,7 @@ const RESPONSE_LINES = [
   "{",
   '  "name": "Ali Sorathiya",',
   '  "role": "Backend Developer",',
-  '  "skills": ["Node.js", "Nest.js", "Spring Boot", "Gen AI & RAG"],',
+  '  "skills": ["Node.js", "NestJS", "Spring Boot", "Gen AI & RAG"],',
   '  "learning": "System Design, AWS, CI/CD, Microservices"',
   "}",
 ];

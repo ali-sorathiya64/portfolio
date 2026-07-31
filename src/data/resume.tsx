@@ -46,7 +46,7 @@ export const DATA: DataType = {
   url: "",
   location: "Gujarat, Junagadh, India",
   locationLink: "https://www.bknmu.edu.in/",
-  description: "Backend Developer | Node.js, Nest.js, Spring Boot, LLMs & RAG",
+  description: "Backend Developer | Node.js, NestJS, Spring Boot, LLMs & RAG",
   summary:
     "Backend Developer with experience in JavaScript/TypeScript, Node.js, Express.js, Nest.js, Spring Boot, PostgreSQL, and MongoDB, Redis. I enjoy building REST APIs, authentication systems, backend applications, and working with databases. Familiar with React for integrating backend services and building full-stack applications, and have used AI-assisted workflows to accelerate frontend development. Currently exploring Generative AI technologies, including LLMs, RAG pipelines, vector databases, and AI-powered applications. Experienced with Docker, GitHub Actions, and CI/CD workflows through hands-on projects, while continuously improving my backend development skills.",
   avatarUrl: "/mine2.jpg",
@@ -60,7 +60,7 @@ export const DATA: DataType = {
       items: [
         "Node.js",
         "Express.js",
-        "Nest.js",
+        "NestJs",
         "Spring Boot",
         "Spring Data JPA",
         "Spring Security",
@@ -137,7 +137,7 @@ export const DATA: DataType = {
       degree: "Bachelor of computer application",
       logoUrl: "/logo0.png",
       start: "July 2023",
-      end: "March 2026",
+      end: "April 2026",
     },
   ],
   projects: [
@@ -173,6 +173,31 @@ export const DATA: DataType = {
         },
       ],
       image: "/quick.png",
+    },
+    {
+      title: "AI Refund Agent – Agentic Gmail Automation",
+      dates: "2026",
+      active: true,
+      description:
+        "An autonomous AI agent that reads a Gmail inbox, identifies refund-request emails using an LLM, and processes refunds — but never without explicit human approval. Built with LangChain's agent framework and LangGraph's human-in-the-loop interrupt/resume pattern, so every financial action pauses for approve/reject before executing. Rebuilt from a CLI prototype into a session-based Express REST API with multi-user OAuth support (each session gets isolated Gmail tokens and conversation memory).",
+      technologies: [
+        "Node.js",
+        "Express.js",
+        "LangChain",
+        "LangGraph",
+        "Groq",
+        "Gmail API",
+        "OAuth 2.0",
+        "Zod",
+      ],
+      links: [
+        {
+          type: "Source",
+          href: "https://github.com/ali-sorathiya64/ai-refund-agent",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "/ai-refund-agent.png",
     },
     {
       title: "TripAI – AI-Powered Travel Itinerary Generator",
