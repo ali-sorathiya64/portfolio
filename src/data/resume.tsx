@@ -115,6 +115,7 @@ export const DATA: DataType = {
         icon: Icons.linkedin,
         navbar: true,
       },
+
       X: {
         name: "X",
         url: "https://x.com/ali_sorathiya",
@@ -140,6 +141,7 @@ export const DATA: DataType = {
       start: "July 2023",
       end: "April 2026",
     },
+    
   ],
   projects: [
     {
