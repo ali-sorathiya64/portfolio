@@ -65,7 +65,8 @@ export const DATA: DataType = {
         "Spring Data JPA",
         "Spring Security",
         "DTO",
-        "RabbitMQ"
+        "RabbitMQ",
+        "Prisma"
       ],
     },
     {
