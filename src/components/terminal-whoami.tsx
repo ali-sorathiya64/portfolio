@@ -2,14 +2,14 @@
 
 import { useEffect, useState, type ReactNode } from "react";
 
-const COMMAND = "curl https://aliportfolioapp.vercel.app/whoami";
+const COMMAND = "curl https://aliportfolioapp.vercel.app/";
 
 const RESPONSE_LINES = [
   "{",
   '  "name": "Ali Sorathiya",',
   '  "role": "Backend Developer",',
   '  "skills": ["Node.js", "NestJS", "Spring Boot", "Gen AI & RAG"],',
-  '  "learning": "System Design, AWS, CI/CD, Microservices"',
+  '  "learning": "System Design, AWS, GitHub Actions & CI/CD, Microservices',
   "}",
 ];
 
