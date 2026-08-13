@@ -62,7 +62,7 @@ export const DATA: DataType = {
         "Node.js",
         "Express.js",
         "NestJs",
-        "System Design(Basics)
+        "System Design(Basics),
         "Spring Boot",
         "Spring Data JPA",
         "Spring Security",
