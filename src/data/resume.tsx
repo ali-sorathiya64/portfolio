@@ -109,6 +109,7 @@ export const DATA: DataType = {
         icon: Icons.github,
         navbar: true,
       },
+
       LinkedIn: {
         name: "LinkedIn",
         url: "https://www.linkedin.com/in/ali-sorathiya-882b22397/",
