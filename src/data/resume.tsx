@@ -166,7 +166,7 @@ export const DATA: DataType = {
         "PreBuilt UI",
         "Gemini API",
       ],
-      
+
       links: [
         {
           type: "Link",
@@ -219,10 +219,10 @@ export const DATA: DataType = {
         "Node.js",
         "Express.js",
         "MongoDB",
+        "OpenRouter",
         "JWT Auth",
         "Tesseract.js",
         "Cloudinary",
-        "OpenRouter",
       ],
       links: [
         {
