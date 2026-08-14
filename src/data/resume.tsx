@@ -4,6 +4,7 @@ import { LucideIcon } from "lucide-react";
 
 type CustomIcon = (props: IconProps) => JSX.Element;
 
+
 interface SocialLink {
   name: string;
   url: string;
@@ -61,6 +62,7 @@ export const DATA: DataType = {
         "Node.js",
         "Express.js",
         "NestJs",
+        "System Design(Basics)",
         "Spring Boot",
         "Spring Data JPA",
         "Spring Security",
@@ -109,6 +111,7 @@ export const DATA: DataType = {
         icon: Icons.github,
         navbar: true,
       },
+
       LinkedIn: {
         name: "LinkedIn",
         url: "https://www.linkedin.com/in/ali-sorathiya-882b22397/",
