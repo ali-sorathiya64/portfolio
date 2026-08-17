@@ -238,6 +238,29 @@ export const DATA: DataType = {
       ],
       image: "/dashboard.jpg",
     },
+     {
+      title: "AI Resume Reviewer Agent",
+      dates: "2026",
+      active: true,
+      description:
+        "A backend RAG (Retrieval-Augmented Generation) service that analyzes resumes and generates recruiter-style feedback instead of a plain summary. Converts resume content into vector embeddings, performs semantic search over Pinecone to retrieve relevant context, then sends it to Google Gemini for detailed evaluation — including ATS optimization suggestions, technical skill analysis, strengths/weaknesses breakdown, and auto-generated interview questions.",
+      technologies: [
+        "TypeScript",
+        "Node.js",
+        "Google Gemini API",
+        "Langchain",
+        "Pinecone",
+        "RAG",
+      ],
+      links: [
+        {
+          type: "Source",
+          href: "https://github.com/ali-sorathiya64/YOUR_REPO_NAME",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "/workflow.jpg",
+    },
     {
   title: "Learning Management System (LMS) Backend",
   dates: "2026",
@@ -262,29 +285,7 @@ export const DATA: DataType = {
   ],
   image: "/nest-js-lms.png",
 },
-    {
-      title: "AI Resume Reviewer Agent",
-      dates: "2026",
-      active: true,
-      description:
-        "A backend RAG (Retrieval-Augmented Generation) service that analyzes resumes and generates recruiter-style feedback instead of a plain summary. Converts resume content into vector embeddings, performs semantic search over Pinecone to retrieve relevant context, then sends it to Google Gemini for detailed evaluation — including ATS optimization suggestions, technical skill analysis, strengths/weaknesses breakdown, and auto-generated interview questions.",
-      technologies: [
-        "TypeScript",
-        "Node.js",
-        "Google Gemini API",
-        "Langchain",
-        "Pinecone",
-        "RAG",
-      ],
-      links: [
-        {
-          type: "Source",
-          href: "https://github.com/ali-sorathiya64/YOUR_REPO_NAME",
-          icon: <Icons.github className="size-3" />,
-        },
-      ],
-      image: "/workflow.jpg",
-    },
+   
     {
       title: "Fitness Tracker – Spring Boot Monolith",
       dates: "2026",
