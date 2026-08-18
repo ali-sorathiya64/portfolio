@@ -11,6 +11,7 @@ interface SocialLink {
   navbar: boolean;
 }
 
+
 interface ContactType {
   email: string;
   tel: string;
