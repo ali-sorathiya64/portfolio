@@ -96,7 +96,7 @@ export const DATA: DataType = {
       items: ["Git", "GitHub"],
     },
   ],
-  resumeUrl: "/a-resume.pdf",
+  resumeUrl: "/sa-resume.pdf",
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
     { href: "/blog", icon: NotebookIcon, label: "Blog" },
@@ -147,6 +147,33 @@ export const DATA: DataType = {
     
   ],
   projects: [
+    {
+  title: "NestJS Microservices Backend System",
+  dates: "2026",
+  active: true,
+  description:
+    "A production-focused microservices backend built with NestJS, featuring an API Gateway, Catalog, Search, and Media services. Implements Clerk JWT authentication, RabbitMQ RPC and asynchronous communication, MongoDB for product data, Elasticsearch for search and indexing, and Cloudinary for media storage. Includes DTO validation, global exception handling, service-to-service communication, health checks, logging, and modular NestJS architecture.",
+  technologies: [
+    "NestJS",
+    "TypeScript",
+    "RabbitMQ",
+    "MongoDB",
+    "Elasticsearch",
+    "Cloudinary",
+    "Clerk",
+    "JWT",
+    "Docker",
+    "DTO Validation",
+  ],
+  links: [
+    {
+      type: "Source",
+      href: "https://github.com/ali-sorathiya64/nest-microservices",
+      icon: <Icons.github className="size-3" />,
+    },
+  ],
+  image: "/nestjs-microservices.png",
+},
     {
       title: "QuickAi – AI Content Creation Platform",
       href: "https://quick-ai-studio-saas.vercel.app/",
