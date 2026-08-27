@@ -73,7 +73,7 @@ export const DATA: DataType = {
     },
     {
       category: "Databases & Caching",
-      items: ["MongoDB", "PostgreSQL", "Redis", "Neon DB", "Vector DB", "Pinecone"],
+      items: ["MongoDB", "PostgreSQL", "Redis", "Neon DB", "Vector DB", "Pinecone", "Cloudinary"],
     },
     {
       category: "AI / Gen AI",
