@@ -96,7 +96,7 @@ export const DATA: DataType = {
       items: ["Git", "GitHub"],
     },
   ],
-  resumeUrl: "/sa_resume.pdf",
+  resumeUrl: "/sa-resume.pdf",
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
     { href: "/blog", icon: NotebookIcon, label: "Blog" },
