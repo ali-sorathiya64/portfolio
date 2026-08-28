@@ -52,50 +52,50 @@ export const DATA: DataType = {
     "Backend Developer with experience in JavaScript/TypeScript, Node.js, Express.js, NestJS, Spring Boot, PostgreSQL, and MongoDB, Redis. I enjoy building REST APIs, authentication systems, backend applications, and working with databases. Familiar with React for integrating backend services and building full-stack applications, and have used AI-assisted workflows to accelerate frontend development. Currently exploring Generative AI technologies, including LLMs, RAG pipelines, vector databases, and AI-powered applications. Experienced with Docker, GitHub Actions, and CI/CD workflows through hands-on projects, while continuously improving my backend development skills.",
   avatarUrl: "/mine2.jpg",
   skills: [
-    {
-      category: "Languages",
-      items: ["C", "JavaScript", "TypeScript", "Java","SQL"],
-    },
-    {
-      category: "Backend",
-      items: [
-        "Node.js",
-        "Express.js",
-        "NestJs",
-        "System Design(Basics)",
-        "Spring Boot",
-        "Spring Data JPA",
-        "Spring Security",
-        "DTO",
-        "RabbitMQ",
-        "Prisma"
-      ],
-    },
-    {
-      category: "Databases & Caching",
-      items: ["MongoDB", "PostgreSQL", "Redis", "Neon DB", "Vector DB", "Pinecone", "Cloudinary"],
-    },
-    {
-      category: "AI / Gen AI",
-      items: ["Gen AI", "RAG", "Langchain", "LLM integration", "Claude"],
-    },
-    {
-      category: "Frontend",
-      items: ["React.js", "Tailwind CSS", "Shadcn/UI", "Prebuilt UI", "Clerk"],
-    },
-    {
-      category: "DevOps & Cloud",
-      items: ["Docker", "GitHub Actions", "CI/CD", "AWS (Basics)", "Vercel", "Render"],
-    },
-    {
-      category: "API & Docs",
-      items: ["Swagger", "Postman"],
-    },
-    {
-      category: "Version Control",
-      items: ["Git", "GitHub"],
-    },
-  ],
+  {
+    category: "Backend",
+    items: [
+      "Node.js",
+      "Express.js",
+      "NestJs",
+      "Spring Boot",
+      "Spring Data JPA",
+      "Spring Security",
+      "System Design(Basics)",
+      "DTO",
+      "RabbitMQ",
+      "Prisma",
+    ],
+  },
+  {
+    category: "Databases & Caching",
+    items: ["MongoDB", "PostgreSQL", "Redis", "Neon DB", "Vector DB", "Pinecone", "Cloudinary"],
+  },
+  {
+    category: "AI / Gen AI",
+    items: ["Gen AI", "RAG", "Langchain", "LLM integration", "Claude"],
+  },
+  {
+    category: "DevOps & Cloud",
+    items: ["Docker", "GitHub Actions", "CI/CD", "AWS (Basics)", "Vercel", "Render"],
+  },
+  {
+    category: "Languages",
+    items: ["C", "JavaScript", "TypeScript", "Java", "SQL"],
+  },
+  {
+    category: "API & Docs",
+    items: ["Swagger", "Postman"],
+  },
+  {
+    category: "Version Control",
+    items: ["Git", "GitHub"],
+  },
+  {
+    category: "Frontend",
+    items: ["React.js", "Tailwind CSS", "Shadcn/UI", "Prebuilt UI", "Clerk"],
+  },
+],
   resumeUrl: "/sa-resume.pdf",
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
@@ -134,7 +134,20 @@ export const DATA: DataType = {
     },
   },
 
-  work: [],
+ work: [
+  {
+    company: "Depple",
+    href: "",
+    badges: [],
+    location: "Remote",
+    title: "Full Stack Developer Intern",
+    logoUrl: "/depple-logo.png",
+    start: "Dec 2025",
+    end: "Feb 2026",
+    description:
+      "Developed scalable full-stack web applications using MERN stack technologies. Designed and implemented RESTful APIs using Node.js and Express.js. Managed MongoDB databases and optimized CRUD operations. Built responsive React.js interfaces to enhance overall user experience.",
+  },
+],
   education: [
     {
       school: "BKNMU",

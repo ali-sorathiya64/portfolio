@@ -13,24 +13,6 @@ import { TerminalWhoami } from "@/components/terminal-whoami";
 
 const BLUR_FADE_DELAY = 0.04;
 
-const MIN_ITEMS_FOR_MARQUEE = 5;
-
-const SECONDS_PER_CHIP = 2.2;
-
-function buildMarqueeItems(items: string[]) {
-  const full = [...items, ...items];
-  const duration = Math.round(items.length * SECONDS_PER_CHIP);
-  return { full, duration };
-}
-
-function SkillChip({ skill }: { skill: string }) {
-  return (
-    <span className='shrink-0 rounded-md border border-zinc-700 bg-zinc-900 px-3 py-1.5 font-mono text-xs text-zinc-200 transition-colors hover:border-green-400 hover:text-green-400'>
-      {skill}
-    </span>
-  );
-}
-
 export default function Page() {
   return (
     <main className='flex flex-col min-h-[100dvh] space-y-10'>
@@ -103,103 +85,79 @@ export default function Page() {
         </BlurFade>
       </section>
 
+      <section id='work'>
+        <div className='flex min-h-0 flex-col gap-y-3'>
+          <BlurFade delay={BLUR_FADE_DELAY * 6.5}>
+            <h2 className='text-xl font-bold'>Experience</h2>
+          </BlurFade>
+
+          {DATA.work.map((work, id) => (
+            <BlurFade
+              key={work.company}
+              delay={BLUR_FADE_DELAY * 7 + id * 0.05}
+            >
+              <ResumeCard
+                logoUrl={work.logoUrl}
+                altText={work.company}
+                title={work.company}
+                subtitle={work.title}
+                href={work.href}
+                badges={work.badges}
+                period={`${work.start} - ${work.end}`}
+                description={work.description}
+              />
+            </BlurFade>
+          ))}
+        </div>
+      </section>
+
       <section id='skills'>
         <div className='flex min-h-0 flex-col gap-y-4'>
           <BlurFade delay={BLUR_FADE_DELAY * 9}>
-            <h2 className='text-xl font-bold'>Skills</h2>
+            <h2 className='text-xl font-bold'>Tech Stack</h2>
           </BlurFade>
 
-          <BlurFade delay={BLUR_FADE_DELAY * 9.5}>
-            <div className='rounded-xl border border-zinc-800 bg-zinc-950 overflow-hidden shadow-lg'>
-              {/* fake terminal titlebar */}
-              <div className='flex items-center gap-1.5 px-4 py-2.5 border-b border-zinc-800 bg-zinc-900'>
-                <span className='size-2.5 rounded-full bg-red-500' />
-                <span className='size-2.5 rounded-full bg-yellow-500' />
-                <span className='size-2.5 rounded-full bg-green-500' />
-                <span className='ml-3 text-xs font-mono text-zinc-500'>
-                  {DATA.name.toLowerCase().replace(" ", "-")}@portfolio: ~/skills
-                </span>
-              </div>
+          <BlurFade delay={BLUR_FADE_DELAY * 9.3}>
+            <p className='max-w-[560px] text-sm text-muted-foreground'>
+              Structured the way a request moves through a backend system — core services first, then data, AI, and infra underneath.
+            </p>
+          </BlurFade>
 
-              <div className='px-4 pt-4 pb-2 font-mono text-xs'>
-                <span className='text-zinc-600'>$</span>{" "}
-                <span className='text-green-400'>cat ./stack --all</span>
-              </div>
+          <div className='relative flex flex-col'>
+            {DATA.skills.map((group, groupId) => (
+              <BlurFade
+                key={group.category}
+                delay={BLUR_FADE_DELAY * 10 + groupId * 0.08}
+              >
+                <div className='relative flex gap-4 pb-6 last:pb-0'>
+                  {/* connector rail */}
+                  <div className='flex flex-col items-center'>
+                    <span className='flex size-2.5 shrink-0 rounded-full border-2 border-green-500 bg-background' />
+                    {groupId !== DATA.skills.length - 1 && (
+                      <span className='w-px flex-1 bg-zinc-800' />
+                    )}
+                  </div>
 
-              <div className='flex flex-col gap-4 pb-6 pt-2'>
-                {DATA.skills.map((group, groupId) => {
-                  const isMarquee = group.items.length >= MIN_ITEMS_FOR_MARQUEE;
-
-                  return (
-                    <div key={group.category} className='flex flex-col gap-1.5'>
-                      <div className='px-4 font-mono text-[11px] uppercase tracking-wider text-zinc-500'>
-                        // {group.category}
-                      </div>
-
-                      {isMarquee ? (
-                        (() => {
-                          const direction = groupId % 2 === 0 ? "marquee-left" : "marquee-right";
-                          const { full, duration } = buildMarqueeItems(group.items);
-
-                          return (
-                            <div
-                              className='relative overflow-hidden'
-                              style={{
-                                WebkitMaskImage:
-                                  "linear-gradient(90deg, transparent, black 6%, black 94%, transparent)",
-                                maskImage:
-                                  "linear-gradient(90deg, transparent, black 6%, black 94%, transparent)",
-                              }}
-                            >
-                              <div
-                                className='marquee-row flex w-max gap-2 px-4'
-                                style={{
-                                  animationName: direction,
-                                  animationDuration: `${duration}s`,
-                                  animationTimingFunction: "linear",
-                                  animationIterationCount: "infinite",
-                                }}
-                              >
-                                {full.map((skill, i) => (
-                                  <SkillChip key={`${skill}-${i}`} skill={skill} />
-                                ))}
-                              </div>
-                            </div>
-                          );
-                        })()
-                      ) : (
-                        <div className='flex flex-wrap gap-2 px-4'>
-                          {group.items.map((skill) => (
-                            <SkillChip key={skill} skill={skill} />
-                          ))}
-                        </div>
-                      )}
+                  <div className='flex-1 pb-1'>
+                    <div className='mb-2 font-mono text-[11px] uppercase tracking-wider text-zinc-500'>
+                      {group.category}
                     </div>
-                  );
-                })}
-              </div>
-
-              <div className='px-4 pb-4 font-mono text-xs text-zinc-600'>
-                <span className='text-zinc-600'>$</span>{" "}
-                <span className='animate-pulse'>▍</span>
-              </div>
-            </div>
-          </BlurFade>
+                    <div className='flex flex-wrap gap-2'>
+                      {group.items.map((skill) => (
+                        <span
+                          key={skill}
+                          className='rounded-md border border-zinc-800 bg-zinc-900/60 px-2.5 py-1 text-xs text-zinc-300 transition-colors hover:border-green-500/60 hover:text-green-400'
+                        >
+                          {skill}
+                        </span>
+                      ))}
+                    </div>
+                  </div>
+                </div>
+              </BlurFade>
+            ))}
+          </div>
         </div>
-
-        <style>{`
-          @keyframes marquee-left {
-            from { transform: translateX(0); }
-            to { transform: translateX(-50%); }
-          }
-          @keyframes marquee-right {
-            from { transform: translateX(-50%); }
-            to { transform: translateX(0); }
-          }
-          .marquee-row:hover {
-            animation-play-state: paused;
-          }
-        `}</style>
       </section>
 
       <section id='projects'>
