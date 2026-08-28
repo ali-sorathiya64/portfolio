@@ -47,10 +47,12 @@ export const DATA: DataType = {
   url: "",
   location: "Gujarat, Junagadh, India",
   locationLink: "https://www.bknmu.edu.in/",
-  description: "Backend Developer | Node.js, NestJS, Spring Boot, Devops, LLMs & RAG",
-  summary:
-    "Backend Developer with experience in JavaScript/TypeScript, Node.js, Express.js, NestJS, Spring Boot, PostgreSQL, and MongoDB, Redis. I enjoy building REST APIs, authentication systems, backend applications, and working with databases. Familiar with React for integrating backend services and building full-stack applications, and have used AI-assisted workflows to accelerate frontend development. Currently exploring Generative AI technologies, including LLMs, RAG pipelines, vector databases, and AI-powered applications. Experienced with Docker, GitHub Actions, and CI/CD workflows through hands-on projects, while continuously improving my backend development skills.",
-  avatarUrl: "/mine2.jpg",
+  description: "Backend Developer | Node.js, NestJS, Spring Boot | REST APIs, Databases & GenAI",
+
+summary:
+  "Backend Developer focused on building REST APIs and backend applications using Node.js, NestJS, Express.js, and Spring Boot. I work with PostgreSQL, MongoDB, Redis, and Prisma, with hands-on experience in authentication, database integration, API development, and backend projects. Familiar with React for connecting frontend applications with backend services. I also explore Generative AI and have worked on projects involving LLMs, RAG pipelines, vector databases, and AI-powered applications. I use Docker in my projects and have basic familiarity with CI/CD and cloud deployment. Currently, I’m strengthening my backend fundamentals while exploring areas such as system design and microservices.",
+
+avatarUrl: "/mine2.jpg",
   skills: [
   {
     category: "Backend",
