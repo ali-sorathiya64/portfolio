@@ -136,6 +136,7 @@ avatarUrl: "/mine2.jpg",
     },
   },
 
+
  work: [
   {
     company: "Depple",
@@ -143,7 +144,7 @@ avatarUrl: "/mine2.jpg",
     badges: [],
     location: "Remote",
     title: "Full Stack Developer Intern",
-    logoUrl: "/depple-logo.png",
+    logoUrl: "/depple.png",
     start: "Dec 2025",
     end: "Feb 2026",
     description:
