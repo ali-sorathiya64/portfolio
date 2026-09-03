@@ -241,7 +241,7 @@ avatarUrl: "/mine2.jpg",
       links: [
         {
           type: "Source",
-          href: "https://github.com/ali-sorathiya64/YOUR_REPO_NAME",
+          href: "https://github.com/ali-sorathiya64/",
           icon: <Icons.github className="size-3" />,
         },
       ],
