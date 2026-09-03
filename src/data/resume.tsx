@@ -241,7 +241,7 @@ avatarUrl: "/mine2.jpg",
       links: [
         {
           type: "Source",
-          href: "https://github.com/ali-sorathiya64/",
+          href: "https://github.com/ali-sorathiya64/ai-resume-reviewer/",
           icon: <Icons.github className="size-3" />,
         },
       ],
