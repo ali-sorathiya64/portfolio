@@ -139,6 +139,7 @@ avatarUrl: "/mine2.jpg",
 
  work: [
   {
+    
     company: "Depple",
     href: "",
     badges: [],
