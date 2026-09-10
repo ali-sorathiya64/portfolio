@@ -67,6 +67,7 @@ avatarUrl: "/mine2.jpg",
       "DTO",
       "RabbitMQ",
       "Prisma",
+      "Viem.js"
     ],
   },
   {
