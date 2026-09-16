@@ -11,7 +11,7 @@ export function formatDate(date: string) {
 
   // Check if targetDate is a valid date
   if (isNaN(targetDate.getTime())) {
-    return ""; // Return empty string for invalid dates
+    return ""; // Returns empty string for invalid dates
   }
 
   const year = targetDate.getFullYear();
