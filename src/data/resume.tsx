@@ -11,7 +11,6 @@ interface SocialLink {
   navbar: boolean;
 }
 
-
 interface ContactType {
   email: string;
   tel: string;
@@ -47,57 +46,57 @@ export const DATA: DataType = {
   url: "",
   location: "Gujarat, Junagadh, India",
   locationLink: "https://www.bknmu.edu.in/",
- description: "Backend Developer | Node.js, NestJS, Spring Boot | REST APIs & GenAI",
+  description: "Backend Developer | Node.js, NestJS, Spring Boot | REST APIs & GenAI",
 
-summary:
-  "Backend Developer focused on building REST APIs and backend applications using Node.js, NestJS, Express.js, and Spring Boot. I work with PostgreSQL, MongoDB, Redis, and Prisma, with hands-on experience in authentication, database integration, API development, and backend projects. Familiar with React for connecting frontend applications with backend services. I also explore Generative AI and have worked on projects involving LLMs, RAG pipelines, vector databases, and AI-powered applications. I use Docker and GitHub Actions in my projects, with basic familiarity with CI/CD, AWS, and cloud deployment. Currently, I’m strengthening my backend fundamentals while exploring areas such as system design and microservices.",
+  summary:
+    "Backend Developer focused on building REST APIs and backend applications using Node.js, NestJS, Express.js, and Spring Boot. I work with PostgreSQL, MongoDB, Redis, and Prisma, with hands-on experience in authentication, database integration, API development, and backend projects. Familiar with React for connecting frontend applications with backend services. I also explore Generative AI and have worked on projects involving LLMs, RAG pipelines, vector databases, and AI-powered applications. I use Docker and GitHub Actions in my projects, with basic familiarity with CI/CD, AWS, and cloud deployment. Currently, I'm strengthening my backend fundamentals while exploring areas such as system design and microservices.",
 
-avatarUrl: "/mine2.jpg",
+  avatarUrl: "/mine2.jpg",
   skills: [
-  {
-    category: "Backend",
-    items: [
-      "Node.js",
-      "Express.js",
-      "NestJs",
-      "Spring Boot",
-      "Spring Data JPA",
-      "Spring Security",
-      "System Design(Basics)",
-      "DTO",
-      "RabbitMQ",
-      "Prisma",
-    ],
-  },
-  {
-    category: "Databases & Caching",
-    items: ["MongoDB", "PostgreSQL", "Redis", "Neon DB", "Vector DB", "Pinecone", "Cloudinary"],
-  },
-  {
-    category: "AI / Gen AI",
-    items: ["Gen AI", "RAG", "Langchain", "LLM integration", "Claude"],
-  },
-  {
-    category: "DevOps & Cloud",
-    items: ["Docker", "GitHub Actions", "CI/CD", "AWS (Basics)", "Vercel", "Render"],
-  },
-  {
-    category: "Languages",
-    items: ["C", "JavaScript", "TypeScript", "Java", "SQL"],
-  },
-  {
-    category: "API & Docs",
-    items: ["Swagger", "Postman"],
-  },
-  {
-    category: "Version Control",
-    items: ["Git", "GitHub"],
-  },
-  {
-    category: "Frontend",
-    items: ["React.js", "Tailwind CSS", "Shadcn/UI", "Prebuilt UI", "Clerk"],
-  },
-],
+    {
+      category: "Backend",
+      items: [
+        "Node.js",
+        "Express.js",
+        "NestJS",
+        "Spring Boot",
+        "Spring Data JPA",
+        "Spring Security",
+        "REST APIs",
+        "RabbitMQ",
+        "Kafka",
+        "Prisma",
+      ],
+    },
+    {
+      category: "Databases & Caching",
+      items: ["PostgreSQL", "MongoDB", "Redis", "Neon DB", "Vector DB", "Pinecone", "Cloudinary"],
+    },
+    {
+      category: "AI / Gen AI",
+      items: ["Gen AI", "RAG", "LangChain", "LLM Integration", "Claude"],
+    },
+    {
+      category: "DevOps & Cloud",
+      items: ["Docker", "Docker Compose", "GitHub Actions", "CI/CD", "AWS (Basic)"],
+    },
+    {
+      category: "Languages",
+      items: ["C", "Java", "JavaScript", "TypeScript", "SQL"],
+    },
+    {
+      category: "API & Docs",
+      items: ["Swagger", "Postman"],
+    },
+    {
+      category: "Version Control",
+      items: ["Git", "GitHub"],
+    },
+    {
+      category: "Frontend",
+      items: ["React.js", "Tailwind CSS", "Shadcn/UI", "Clerk"],
+    },
+  ],
   resumeUrl: "/sa-resume.pdf",
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
@@ -136,61 +135,100 @@ avatarUrl: "/mine2.jpg",
     },
   },
 
+  work: [
+    {
+      company: "MSMindLabs",
+      href: "",
+      badges: [],
+      location: "Remote",
+      title: "Backend Developer — Onarc (Web3 Platform)",
+      logoUrl: "/msmindlabs.png",
+      start: "Sept 2026",
+      end: "Sept 2026",
+      description:
+        "Built a production-ready backend service for Onarc, a Web3 analytics platform that tracks new token launches, liquidity pools, and trading activity on the Arc blockchain. Implemented a data pipeline that listens to platform events, processes them in batches, and stores structured data in PostgreSQL. Built the REST API layer that serves indexed data to the frontend for real-time token and trade feeds. Made the pipeline resilient to unreliable third-party APIs using retries, provider fallbacks, and adaptive batch sizing.",
+    },
+    {
+      company: "Depple",
+      href: "",
+      badges: [],
+      location: "Remote",
+      title: "Full Stack Developer Intern",
+      logoUrl: "/depple.png",
+      start: "Dec 2025",
+      end: "Feb 2026",
+      description:
+        "Developed scalable full-stack web applications using MERN stack technologies. Designed and implemented RESTful APIs using Node.js and Express.js. Managed MongoDB databases and optimized CRUD operations. Built responsive React.js interfaces to enhance overall user experience.",
+    },
+  ],
 
- work: [
-  {
-    
-    company: "Depple",
-    href: "",
-    badges: [],
-    location: "Remote",
-    title: "Full Stack Developer Intern",
-    logoUrl: "/depple.png",
-    start: "Dec 2025",
-    end: "Feb 2026",
-    description:
-      "Developed scalable full-stack web applications using MERN stack technologies. Designed and implemented RESTful APIs using Node.js and Express.js. Managed MongoDB databases and optimized CRUD operations. Built responsive React.js interfaces to enhance overall user experience.",
-  },
-],
   education: [
     {
       school: "BKNMU",
       href: "https://www.bknmu.edu.in/",
-      degree: "Bachelor of computer application",
+      degree: "Bachelor of Computer Application",
       logoUrl: "/logo0.png",
       start: "July 2023",
       end: "April 2026",
     },
-    
   ],
+
   projects: [
     {
-  title: "NestJS Microservices Backend System",
-  dates: "2026",
-  active: true,
-  description:
-    "A production-focused microservices backend built with NestJS, featuring an API Gateway, Catalog, Search, and Media services. Implements Clerk JWT authentication, RabbitMQ RPC and asynchronous communication, MongoDB for product data, Elasticsearch for search and indexing, and Cloudinary for media storage. Includes DTO validation, global exception handling, service-to-service communication, health checks, logging, and modular NestJS architecture.",
-  technologies: [
-    "NestJS",
-    "TypeScript",
-    "RabbitMQ",
-    "MongoDB",
-    "Elasticsearch",
-    "Cloudinary",
-    "Clerk",
-    "JWT",
-    "Docker",
-    "DTO Validation",
-  ],
-  links: [
-    {
-      type: "Source",
-      href: "https://github.com/ali-sorathiya64/nest-microservices",
-      icon: <Icons.github className="size-3" />,
+      title: "NestJS Microservices Backend System",
+      dates: "2026",
+      active: true,
+      description:
+        "A production-focused microservices backend built with NestJS, featuring an API Gateway, Catalog, Search, and Media services. Implements Clerk JWT authentication, RabbitMQ RPC and asynchronous communication, MongoDB for product data, Elasticsearch for search and indexing, and Cloudinary for media storage. Includes DTO validation, global exception handling, service-to-service communication, health checks, logging, and modular NestJS architecture.",
+      technologies: [
+        "NestJS",
+        "TypeScript",
+        "RabbitMQ",
+        "MongoDB",
+        "Elasticsearch",
+        "Cloudinary",
+        "Clerk",
+        "JWT",
+        "Docker",
+        "DTO Validation",
+      ],
+      links: [
+        {
+          type: "Source",
+          href: "https://github.com/ali-sorathiya64/nest-microservices",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "/nestjs-microservices.png",
     },
-  ],
-  image: "/nestjs-microservices.png",
-},
+    {
+      title: "JoinEazy — Student & Assignment Management",
+      href: "",
+      dates: "2026",
+      active: true,
+      description:
+        "Full-stack platform for managing students, groups, and assignments with role-based access for admins and students. Built with JWT authentication, group management, assignment-to-group mapping, two-step submission, and progress tracking. Added an assignment-specific AI assistant using LangChain + Pinecone that indexes assignments and answers questions using their content. Documented APIs with Swagger and set up Docker Compose for consistent local and deployed environments.",
+      technologies: [
+        "React",
+        "Node.js",
+        "Express.js",
+        "PostgreSQL",
+        "Neon DB",
+        "JWT",
+        "LangChain",
+        "Pinecone",
+        "Docker",
+        "Swagger",
+      ],
+      links: [
+        {
+          type: "Source",
+          href: "https://github.com/ali-sorathiya64/assignment-task",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "/joineazy.png",
+    },
     {
       title: "QuickAi – AI Content Creation Platform",
       href: "https://quick-ai-studio-saas.vercel.app/",
@@ -207,10 +245,8 @@ avatarUrl: "/mine2.jpg",
         "Clerk",
         "PostgreSQL",
         "Neon DB",
-        "PreBuilt UI",
         "Gemini API",
       ],
-
       links: [
         {
           type: "Link",
@@ -225,7 +261,7 @@ avatarUrl: "/mine2.jpg",
       ],
       image: "/quick.png",
     },
-        {
+    {
       title: "AI Resume Reviewer Agent",
       dates: "2026",
       active: true,
@@ -235,7 +271,7 @@ avatarUrl: "/mine2.jpg",
         "TypeScript",
         "Node.js",
         "Google Gemini API",
-        "Langchain",
+        "LangChain",
         "Pinecone",
         "RAG",
       ],
@@ -253,7 +289,7 @@ avatarUrl: "/mine2.jpg",
       dates: "2026",
       active: true,
       description:
-        "An autonomous AI agent that reads a Gmail inbox, identifies refund-request emails using an LLM, and processes refunds — but never without explicit human approval. Built with LangChain's agent framework and LangGraph's human-in-the-loop interrupt/resume pattern, so every financial action pauses for approve/reject before executing. Rebuilt from a CLI prototype into a session-based Express REST API with multi-user OAuth support (each session gets isolated Gmail tokens and conversation memory).",
+        "An autonomous AI agent that reads a Gmail inbox, identifies refund-request emails using an LLM, and processes refunds — but never without explicit human approval. Built with LangChain's agent framework and LangGraph's human-in-the-loop interrupt/resume pattern, so every financial action pauses for approve/reject before executing. Rebuilt from a CLI prototype into a session-based Express REST API with multi-user OAuth support.",
       technologies: [
         "Node.js",
         "Express.js",
@@ -273,7 +309,6 @@ avatarUrl: "/mine2.jpg",
       ],
       image: "/ai-refund-agent.png",
     },
-
     {
       title: "TripAI – AI-Powered Travel Itinerary Generator",
       href: "https://travel-itinerary-generator-ai.vercel.app/",
@@ -306,32 +341,30 @@ avatarUrl: "/mine2.jpg",
       ],
       image: "/dashboard.jpg",
     },
-    
     {
-  title: "Learning Management System (LMS) Backend",
-  dates: "2026",
-  active: true,
-  description:
-    "A modular Learning Management System backend built with NestJS and MongoDB. Implements JWT-based authentication, role-based authorization for admins and users, course management APIs, DTO-based request validation, Mongoose integration, and Dockerized deployment. Designed using NestJS modules, controllers, and services to build a clean and maintainable REST API.",
-  technologies: [
-    "NestJS",
-    "TypeScript",
-    "MongoDB",
-    "Mongoose",
-    "JWT",
-    "Docker",
-    "DTO",
-  ],
-  links: [
-    {
-      type: "Source",
-      href: "https://github.com/ali-sorathiya64/nest-js-lms-backend",
-      icon: <Icons.github className="size-3" />,
+      title: "Learning Management System (LMS) Backend",
+      dates: "2026",
+      active: true,
+      description:
+        "A modular Learning Management System backend built with NestJS and MongoDB. Implements JWT-based authentication, role-based authorization for admins and users, course management APIs, DTO-based request validation, Mongoose integration, and Dockerized deployment. Designed using NestJS modules, controllers, and services to build a clean and maintainable REST API.",
+      technologies: [
+        "NestJS",
+        "TypeScript",
+        "MongoDB",
+        "Mongoose",
+        "JWT",
+        "Docker",
+        "DTO",
+      ],
+      links: [
+        {
+          type: "Source",
+          href: "https://github.com/ali-sorathiya64/nest-js-lms-backend",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "/nest-js-lms.png",
     },
-  ],
-  image: "/nest-js-lms.png",
-},
-   
     {
       title: "Fitness Tracker – Spring Boot Monolith",
       dates: "2026",
@@ -344,7 +377,7 @@ avatarUrl: "/mine2.jpg",
         "Spring Security",
         "Spring Data JPA",
         "PostgreSQL",
-        "Neon Db",
+        "Neon DB",
         "Docker",
         "Swagger",
       ],
@@ -363,7 +396,7 @@ avatarUrl: "/mine2.jpg",
       dates: "2026",
       active: true,
       description:
-        "MediConnect is an advanced healthcare platform designed to simplify access to medical services with AI-powered health insights, patient portals, and real-time hospital search. The system offers 24/7 support, predictive analytics, secure data handling, appointment management, and direct communication with healthcare providers. Built to scale from small clinics to large hospitals, MediConnect delivers a modern, user-friendly healthcare experience for both patients and professionals.",
+        "MediConnect is an advanced healthcare platform designed to simplify access to medical services with AI-powered health insights, patient portals, and real-time hospital search. The system offers 24/7 support, predictive analytics, secure data handling, appointment management, and direct communication with healthcare providers.",
       technologies: [
         "Next.js",
         "Supabase",
@@ -391,7 +424,7 @@ avatarUrl: "/mine2.jpg",
       dates: "2025",
       active: true,
       description:
-        "A modern, fast and secure real-time chat application featuring one-to-one messaging, group chats, online presence, typing indicators, message editing, and media sharing. Built with a scalable architecture and real-time updates using WebSockets, the app delivers a seamless, WhatsApp-like messaging experience. It also includes authentication, user profiles, read receipts, and a clean, mobile-friendly UI to ensure smooth communication across all devices.",
+        "A modern, fast and secure real-time chat application featuring one-to-one messaging, group chats, online presence, typing indicators, message editing, and media sharing. Built with a scalable architecture and real-time updates using WebSockets, the app delivers a seamless, WhatsApp-like messaging experience.",
       technologies: [
         "React",
         "Node.js",
@@ -400,7 +433,6 @@ avatarUrl: "/mine2.jpg",
         "Socket.io",
         "Cloudinary",
         "Tailwind CSS",
-        "Daisi UI",
         "JWT Auth",
       ],
       links: [
