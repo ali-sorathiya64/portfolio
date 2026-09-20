@@ -262,7 +262,7 @@ export const DATA: DataType = {
           icon: <Icons.github className="size-3" />,
         },
       ],
-      image: "/joineazy.png",
+      image: "/joineazy.jpg",
     },
     {
       title: "AI Resume Reviewer Agent",
