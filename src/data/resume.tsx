@@ -144,6 +144,7 @@ export const DATA: DataType = {
       title: "Backend Developer — Onarc (Web3 Platform)",
       logoUrl: "/msmindlabs.png",
       start: "Sept 2026",
+      end: "",
       description:
         "Built a production-ready backend service for Onarc, a Web3 analytics platform that tracks new token launches, liquidity pools, and trading activity on the Arc blockchain. Implemented a data pipeline that listens to platform events, processes them in batches, and stores structured data in PostgreSQL. Built the REST API layer that serves indexed data to the frontend for real-time token and trade feeds. Made the pipeline resilient to unreliable third-party APIs using retries, provider fallbacks, and adaptive batch sizing.",
     },
