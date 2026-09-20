@@ -60,9 +60,8 @@ export const DATA: DataType = {
         "Express.js",
         "NestJS",
         "Spring Boot",
-        "Spring Data JPA",
-        "Spring Security",
         "REST APIs",
+        "System Design",
         "RabbitMQ",
         "Kafka",
         "Prisma",
@@ -78,7 +77,17 @@ export const DATA: DataType = {
     },
     {
       category: "DevOps & Cloud",
-      items: ["Docker", "Docker Compose", "GitHub Actions", "CI/CD", "AWS (Basic)"],
+      items: ["Docker", "Docker Compose", "GitHub Actions", "CI/CD", "AWS"],
+    },
+     {
+      category: "Blockchain",
+      items: [
+        "viem",
+        "EVM Event Indexing",
+        "Uniswap V3/V4",
+        "RPC Resilience",
+        "Multi-Provider Failover",
+      ],
     },
     {
       category: "Languages",
@@ -94,7 +103,7 @@ export const DATA: DataType = {
     },
     {
       category: "Frontend",
-      items: ["React.js", "Tailwind CSS", "Shadcn/UI", "Clerk"],
+      items: ["React.js", "Tailwind CSS", "Shadcn/UI", "Prebuilt UI", "Clerk" ],
     },
   ],
   resumeUrl: "/sa__resume.pdf",
@@ -233,7 +242,7 @@ export const DATA: DataType = {
       ],
       image: "/quick.png",
     },
-     {
+    {
       title: "JoinEazy — Student & Assignment Management",
       href: "",
       dates: "2026",
@@ -257,7 +266,8 @@ export const DATA: DataType = {
           type: "Link",
           href: "https://joineazy-assignment-system.vercel.app/",
           icon: <Icons.globe className="size-3" />,
-        },{
+        },
+        {
           type: "Source",
           href: "https://github.com/ali-sorathiya64/assignment-task",
           icon: <Icons.github className="size-3" />,
@@ -388,7 +398,7 @@ export const DATA: DataType = {
       links: [
         {
           type: "Source",
-          href: "https://github.com/ali-sorathiya64/YOUR_REPO_NAME",
+          href: "https://github.com/ali-sorathiya64/spring-boot-fitness-monolith-backend/",
           icon: <Icons.github className="size-3" />,
         },
       ],
