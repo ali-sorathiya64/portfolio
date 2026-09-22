@@ -8,9 +8,8 @@ import { DATA } from "@/data/resume";
 import Link from "next/link";
 import Markdown from "react-markdown";
 import { Button } from "@/components/ui/button";
-import { Download, Mail, Bug } from "lucide-react";
+import { Download, Mail, Wrench } from "lucide-react";
 import { TerminalWhoami } from "@/components/terminal-whoami";
-
 
 const BLUR_FADE_DELAY = 0.04;
 
@@ -21,8 +20,12 @@ export default function Page() {
         <div className='mx-auto w-full max-w-2xl space-y-6'>
           <div className='flex items-center gap-4'>
             <BlurFade delay={BLUR_FADE_DELAY}>
-              <Avatar className='size-14 border shrink-0'>
-                <AvatarImage alt={DATA.name} src={DATA.avatarUrl} />
+              <Avatar className='size-14 shrink-0 border-2 border-zinc-800 rounded-full overflow-hidden'>
+                <AvatarImage
+                  alt={DATA.name}
+                  src={DATA.avatarUrl}
+                  className='object-cover'
+                />
                 <AvatarFallback>{DATA.initials}</AvatarFallback>
               </Avatar>
             </BlurFade>
@@ -35,12 +38,13 @@ export default function Page() {
                 text={`Hi, I'm ${DATA.name.split(" ")[0]}`}
               />
               <BlurFade delay={BLUR_FADE_DELAY * 3}>
-                <div className='flex items-center gap-1.5 font-mono text-xs text-zinc-500'>
-                  <span className='relative flex size-2'>
+                <div className='flex items-center gap-1.5 font-mono text-xs text-zinc-500 leading-none'>
+                  <span className='relative flex size-2 shrink-0'>
                     <span className='absolute inline-flex h-full w-full animate-ping rounded-full bg-green-400 opacity-75' />
                     <span className='relative inline-flex size-2 rounded-full bg-green-500' />
                   </span>
-                  Probably debugging something right now
+                  <Wrench className='size-3 shrink-0' />
+                  <span>tinkering with something new</span>
                 </div>
               </BlurFade>
             </div>

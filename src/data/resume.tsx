@@ -46,7 +46,7 @@ export const DATA: DataType = {
   url: "",
   location: "Gujarat, Junagadh, India",
   locationLink: "https://www.bknmu.edu.in/",
-  description: "Backend Developer | Node.js · NestJS · Spring Boot | System Design, Microservices, GenAI Integration & Cloud",
+  description: "Backend Developer | Node.js · NestJS · Spring Boot | System Design, Microservices",
 
   summary:
     "Backend Developer focused on building REST APIs and backend applications using Node.js, NestJS, Express.js, and Spring Boot. I work with PostgreSQL, MongoDB, Redis, and Prisma, with hands-on experience in authentication, database integration, API development, and backend projects. Familiar with React for connecting frontend applications with backend services. I also explore Generative AI and have worked on projects involving LLMs, RAG pipelines, vector databases, and AI-powered applications. I use Docker and GitHub Actions in my projects, with basic familiarity with CI/CD, AWS, and cloud deployment. Currently, I'm strengthening my backend fundamentals while exploring areas such as system design and microservices.",
@@ -151,7 +151,7 @@ export const DATA: DataType = {
       badges: [],
       location: "Remote",
       title: "Backend Developer — Onarc (Web3 Platform)",
-      logoUrl: "/msmindlabs.png",
+      logoUrl: "/msmindlabs.jpg",
       start: "Sept 2026",
       end: "",
       description:
@@ -163,7 +163,7 @@ export const DATA: DataType = {
       badges: [],
       location: "Remote",
       title: "Full Stack Developer Intern",
-      logoUrl: "/depple.png",
+      logoUrl: "/depple.jpg",
       start: "Dec 2025",
       end: "Feb 2026",
       description:
