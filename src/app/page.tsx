@@ -50,11 +50,20 @@ export default function Page() {
             </div>
           </div>
 
-          <BlurFadeText
-            className='max-w-[560px] text-pretty text-muted-foreground md:text-lg'
-            delay={BLUR_FADE_DELAY * 4}
-            text={DATA.description}
-          />
+          <div className='sm:hidden'>
+            <BlurFadeText
+              className='max-w-[560px] text-pretty text-muted-foreground md:text-lg'
+              delay={BLUR_FADE_DELAY * 4}
+              text={DATA.description}
+            />
+          </div>
+          <div className='hidden sm:block'>
+            <BlurFadeText
+              className='max-w-[560px] text-pretty text-muted-foreground md:text-lg'
+              delay={BLUR_FADE_DELAY * 4}
+              text={DATA.descriptionFull}
+            />
+          </div>
 
           <BlurFade delay={BLUR_FADE_DELAY * 5}>
             <div className='flex flex-wrap gap-2'>
