@@ -39,6 +39,7 @@ interface DataType {
   education: any[];
   projects: any[];
   resumeUrl: string;
+  githubUsername: string;
 }
 
 export const DATA: DataType = {
@@ -466,4 +467,5 @@ export const DATA: DataType = {
       image: "/3.jpg",
     },
   ],
+  githubUsername: "ali-sorathiya64",
 };

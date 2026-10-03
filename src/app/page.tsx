@@ -10,6 +10,7 @@ import Markdown from "react-markdown";
 import { Button } from "@/components/ui/button";
 import { Download, Mail, Wrench } from "lucide-react";
 import { TerminalWhoami } from "@/components/terminal-whoami";
+import { GithubActivity } from "@/components/github-activity";
 
 const BLUR_FADE_DELAY = 0.04;
 
@@ -117,7 +118,7 @@ export default function Page() {
                 subtitle={work.title}
                 href={work.href}
                 badges={work.badges}
-                period={`${work.start} - ${work.end}`}
+                period={`${work.start} ${work.end}`}
                 description={work.description}
               />
             </BlurFade>
@@ -171,6 +172,17 @@ export default function Page() {
               </BlurFade>
             ))}
           </div>
+        </div>
+      </section>
+
+      <section id='github'>
+        <div className='flex min-h-0 flex-col gap-y-3'>
+          <BlurFade delay={BLUR_FADE_DELAY * 10.5}>
+            <h2 className='text-xl font-bold'>GitHub Activity</h2>
+          </BlurFade>
+          <BlurFade delay={BLUR_FADE_DELAY * 11}>
+            <GithubActivity username={DATA.githubUsername} />
+          </BlurFade>
         </div>
       </section>
 
