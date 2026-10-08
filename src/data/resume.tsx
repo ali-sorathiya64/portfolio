@@ -230,6 +230,8 @@ export const DATA: DataType = {
         "PostgreSQL",
         "Neon DB",
         "Gemini API",
+        "Docker",
+        "Docker-compose"
       ],
       links: [
         {
