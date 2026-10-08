@@ -213,41 +213,7 @@ export const DATA: DataType = {
       ],
       image: "/nestjs-microservices.png",
     },
-    {
-      title: "QuickAi – AI Content Creation Platform",
-      href: "https://quick-ai-studio-saas.vercel.app/",
-      dates: "2026",
-      active: true,
-      description:
-        "QuickAi is a powerful AI-driven content creation platform that enables users to write articles, generate images, remove backgrounds/objects, and summarize documents in seconds. It includes features like AI Article Writer, Blog Title Generator, Image Generation, Resume Review, Background/Object Removal, and more. The platform also provides testimonials, pricing plans, and newsletter subscription to create a complete SaaS experience.",
-      technologies: [
-        "React",
-        "Tailwind CSS",
-        "Node.js",
-        "Express.js",
-        "Cloudinary",
-        "Clerk",
-        "PostgreSQL",
-        "Neon DB",
-        "Gemini API",
-        "Docker",
-        "Docker-compose"
-      ],
-      links: [
-        {
-          type: "Link",
-          href: "https://quick-ai-studio-saas.vercel.app/",
-          icon: <Icons.globe className="size-3" />,
-        },
-        {
-          type: "Source",
-          href: "https://github.com/ali-sorathiya64/multi-ai-SaaS-app",
-          icon: <Icons.github className="size-3" />,
-        },
-      ],
-      image: "/quick.png",
-    },
-    {
+     {
       title: "JoinEazy — Student & Assignment Management",
       href: "",
       dates: "2026",
@@ -281,6 +247,40 @@ export const DATA: DataType = {
         },
       ],
       image: "/joineazy.jpg",
+    },
+    {
+      title: "QuickAi – AI Content Creation Platform",
+      href: "https://quick-ai-studio-saas.vercel.app/",
+      dates: "2026",
+      active: true,
+      description:
+        "QuickAi is a powerful AI-driven content creation platform that enables users to write articles, generate images, remove backgrounds/objects, and summarize documents in seconds. It includes features like AI Article Writer, Blog Title Generator, Image Generation, Resume Review, Background/Object Removal, and more. The platform also provides testimonials, pricing plans, and newsletter subscription to create a complete SaaS experience.",
+      technologies: [
+        "React",
+        "Tailwind CSS",
+        "Node.js",
+        "Express.js",
+        "Cloudinary",
+        "Clerk",
+        "PostgreSQL",
+        "Neon DB",
+        "Gemini API",
+        "Docker",
+        "Docker-compose"
+      ],
+      links: [
+        {
+          type: "Link",
+          href: "https://quick-ai-studio-saas.vercel.app/",
+          icon: <Icons.globe className="size-3" />,
+        },
+        {
+          type: "Source",
+          href: "https://github.com/ali-sorathiya64/multi-ai-SaaS-app",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "/quick.png",
     },
     {
       title: "AI Resume Reviewer Agent",
