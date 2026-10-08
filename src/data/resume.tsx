@@ -261,6 +261,8 @@ export const DATA: DataType = {
         "PostgreSQL",
         "Neon DB",
         "JWT",
+        "RAG",
+        "OpenRouter API",
         "LangChain",
         "Pinecone",
         "Docker",
