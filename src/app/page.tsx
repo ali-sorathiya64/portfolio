@@ -14,6 +14,12 @@ import { GithubActivity } from "@/components/github-activity";
 
 const BLUR_FADE_DELAY = 0.04;
 
+const SPECS = [
+  { label: "focus", value: "APIs · Microservices · System Design" },
+  { label: "works with", value: "Node.js · NestJS · Spring Boot" },
+  { label: "exploring", value: "RAG · AI Agents" },
+];
+
 export default function Page() {
   return (
     <main className='flex flex-col min-h-[100dvh] space-y-10'>
@@ -51,20 +57,26 @@ export default function Page() {
             </div>
           </div>
 
-          <div className='sm:hidden'>
-            <BlurFadeText
-              className='max-w-[560px] text-pretty text-muted-foreground md:text-lg'
-              delay={BLUR_FADE_DELAY * 4}
-              text={DATA.description}
-            />
-          </div>
-          <div className='hidden sm:block'>
-            <BlurFadeText
-              className='max-w-[560px] text-pretty text-muted-foreground md:text-lg'
-              delay={BLUR_FADE_DELAY * 4}
-              text={DATA.descriptionFull}
-            />
-          </div>
+          <BlurFade delay={BLUR_FADE_DELAY * 4}>
+            <div className='space-y-3'>
+              <h1 className='text-lg font-semibold text-foreground sm:text-xl'>
+                Backend Developer
+              </h1>
+              <dl className='space-y-1.5 border-t border-zinc-800 pt-3 text-sm'>
+                {SPECS.map((spec) => (
+                  <div
+                    key={spec.label}
+                    className='grid grid-cols-[84px_1fr] gap-3'
+                  >
+                    <dt className='font-mono text-xs leading-5 text-zinc-500'>
+                      {spec.label}
+                    </dt>
+                    <dd className='text-muted-foreground'>{spec.value}</dd>
+                  </div>
+                ))}
+              </dl>
+            </div>
+          </BlurFade>
 
           <BlurFade delay={BLUR_FADE_DELAY * 5}>
             <div className='flex flex-wrap gap-2'>
