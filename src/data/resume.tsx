@@ -76,7 +76,7 @@ export const DATA: DataType = {
     },
     {
       category: "AI / Gen AI",
-      items: ["Gen AI", "RAG", "LangChain", "LanGraph", "Tool Calling", "LLM Integration", "Claude"],
+      items: ["Gen AI", "RAG", "LangChain", "LanGraph", "Tool Calling", "MCP", "LLM Integration", "Claude"],
     },
     {
       category: "DevOps & Cloud",
