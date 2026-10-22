@@ -1,6 +1,5 @@
 import { Icons, IconProps } from "@/components/icons";
 import { HomeIcon, NotebookIcon } from "lucide-react";
-import { LucideIcon } from "lucide-react";
 
 type CustomIcon = (props: IconProps) => JSX.Element;
 
