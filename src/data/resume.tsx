@@ -83,7 +83,7 @@ export const DATA: DataType = {
      {
       category: "Blockchain",
       items: [
-        "viem",
+        "viem.js",
         "EVM Event Indexing",
         "Uniswap V3/V4",
         "RPC Resilience",
