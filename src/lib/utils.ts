@@ -9,7 +9,7 @@ export function formatDate(date: string) {
 
   let targetDate = new Date(dateString);
 
-  // Check if targetDate is a valid date
+  
   if (isNaN(targetDate.getTime())) {
     return ""; // Returns empty string for invalid dates
   }
