@@ -27,7 +27,7 @@ function monthFraction(month: number) {
 
 const JUMPS = [
   { label: "Jan", month: 0 },
-  { label: "Jun", month: 5 },
+  { label: "Jul", month: 6 },
   { label: "Now", month: -1 },
 ];
 
