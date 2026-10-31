@@ -21,7 +21,7 @@ export default function Page() {
         <div className='mx-auto w-full max-w-2xl space-y-6'>
           <div className='flex items-center gap-4'>
             <BlurFade delay={BLUR_FADE_DELAY}>
-              <Avatar className='size-14 shrink-0 border-2 border-zinc-800 rounded-full overflow-hidden'>
+              <Avatar className='size-14 shrink-0 border-2 border-border rounded-full overflow-hidden'>
                 <AvatarImage
                   alt={DATA.name}
                   src={DATA.avatarUrl}
@@ -39,7 +39,7 @@ export default function Page() {
                 text={`Hi, I'm ${DATA.name.split(" ")[0]}`}
               />
               <BlurFade delay={BLUR_FADE_DELAY * 3}>
-                <div className='flex items-center gap-1.5 font-mono text-xs text-zinc-500 leading-none'>
+                <div className='flex items-center gap-1.5 font-mono text-xs text-muted-foreground leading-none'>
                   <span className='relative flex size-2 shrink-0'>
                     <span className='absolute inline-flex h-full w-full animate-ping rounded-full bg-green-400 opacity-75' />
                     <span className='relative inline-flex size-2 rounded-full bg-green-500' />
@@ -145,19 +145,19 @@ export default function Page() {
                   <div className='flex flex-col items-center'>
                     <span className='flex size-2.5 shrink-0 rounded-full border-2 border-green-500 bg-background' />
                     {groupId !== DATA.skills.length - 1 && (
-                      <span className='w-px flex-1 bg-zinc-800' />
+                      <span className='w-px flex-1 bg-border' />
                     )}
                   </div>
 
                   <div className='flex-1 pb-1'>
-                    <div className='mb-2 font-mono text-[11px] uppercase tracking-wider text-zinc-500'>
+                    <div className='mb-2 font-mono text-[11px] uppercase tracking-wider text-muted-foreground'>
                       {group.category}
                     </div>
                     <div className='flex flex-wrap gap-2'>
                       {group.items.map((skill) => (
                         <span
                           key={skill}
-                          className='rounded-md border border-zinc-800 bg-zinc-900/60 px-2.5 py-1 text-xs text-zinc-300 transition-colors hover:border-green-500/60 hover:text-green-400'
+                          className='rounded-md border border-border bg-muted/60 px-2.5 py-1 text-xs text-foreground/80 transition-colors hover:border-green-500/60 hover:text-green-500'
                         >
                           {skill}
                         </span>

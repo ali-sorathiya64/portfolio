@@ -69,16 +69,25 @@ export const DATA: DataType = {
       ],
     },
     {
-      category: "Databases & Caching",
-      items: ["PostgreSQL", "MongoDB", "Redis", "Neon DB", "Vector DB", "Pinecone", "Cloudinary"],
-    },
+  category: "Databases & Caching",
+  items: [
+    "PostgreSQL",
+    "MongoDB",
+    "Redis",
+    "Neon DB",
+    "Vector DB",
+    "Pinecone",
+    "S3-compatible Storage",
+    "Cloudinary",
+  ],
+},
     {
       category: "AI / Gen AI",
       items: ["Gen AI", "RAG", "LangChain", "LanGraph", "MCP", "Tool Calling", "LLM Integration", "Claude"],
     },
     {
       category: "DevOps & Cloud",
-      items: ["Docker", "Docker Compose", "GitHub Actions", "CI/CD", "AWS"],
+      items: ["Docker", "Docker Compose", "GitHub Actions", "CI/CD", "AWS", "Nginx"],
     },
      {
       category: "Blockchain",
@@ -138,7 +147,7 @@ export const DATA: DataType = {
       },
       email: {
         name: "Send Email",
-        url: "sorathiyaali97@gmail.com",
+       url: "mailto:sorathiyaali97@gmail.com",
         icon: Icons.email,
         navbar: false,
       },
