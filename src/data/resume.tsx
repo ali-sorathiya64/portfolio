@@ -116,7 +116,7 @@ export const DATA: DataType = {
       items: ["React.js", "Tailwind CSS", "Shadcn/UI", "Prebuilt UI", "Clerk" ],
     },
   ],
-  resumeUrl: "/as__resume.pdf",
+  resumeUrl: "/sa-resume.pdf",
   navbar: [
     { href: "/", icon: HomeIcon, label: "Home" },
     { href: "/blog", icon: NotebookIcon, label: "Blog" },
