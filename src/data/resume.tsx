@@ -194,31 +194,34 @@ export const DATA: DataType = {
 
   projects: [
     {
-      title: "NestJS Microservices Backend System",
+      title: "TaskFlow – Event-Driven Microservices Backend",
       dates: "2026",
       active: true,
       description:
-        "A production-focused microservices backend built with NestJS, featuring an API Gateway, Catalog, Search, and Media services. Implements Clerk JWT authentication, RabbitMQ RPC and asynchronous communication, MongoDB for product data, Elasticsearch for search and indexing, and Cloudinary for media storage. Includes DTO validation, global exception handling, service-to-service communication, health checks, logging, and modular NestJS architecture.",
+        "An event-driven task-management backend built with six TypeScript microservices (Gateway, Auth, Task, Media, Workflow, AI) in an npm-workspaces monorepo. The API Gateway handles JWT verification, RBAC, and rate limiting, and internal services accept only gateway-verified requests. Kafka producers and a consumer build a per-task activity timeline, Redis cache-aside with invalidation speeds up task reads, and media uploads go to S3-compatible storage. An AI service summarizes tasks from their event timelines using OpenRouter. Containerized with Docker Compose and validated by GitHub Actions CI for type-checks and Docker builds.",
       technologies: [
-        "NestJS",
+        "Node.js",
         "TypeScript",
-        "RabbitMQ",
-        "MongoDB",
-        "Elasticsearch",
-        "Cloudinary",
-        "Clerk",
+        "Express.js",
+        "Kafka",
+        "Redis",
+        "PostgreSQL",
         "JWT",
+        "RBAC",
+        "S3-compatible Storage",
+        "OpenRouter",
         "Docker",
-        "DTO Validation",
+        "Docker Compose",
+        "GitHub Actions",
       ],
       links: [
         {
           type: "Source",
-          href: "https://github.com/ali-sorathiya64/nest-microservices",
+          href: "https://github.com/ali-sorathiya64/nodejs-production-ready-microservices",
           icon: <Icons.github className="size-3" />,
         },
       ],
-      image: "/nestjs-microservices.png",
+      image: "/taskflow-microservices.png",
     },
      {
       title: "JoinEazy — Student & Assignment Management",
@@ -254,6 +257,33 @@ export const DATA: DataType = {
         },
       ],
       image: "/joineazy.jpg",
+    },
+    {
+      title: "NestJS Microservices Backend System",
+      dates: "2026",
+      active: true,
+      description:
+        "A production-focused microservices backend built with NestJS, featuring an API Gateway, Catalog, Search, and Media services. Implements Clerk JWT authentication, RabbitMQ RPC and asynchronous communication, MongoDB for product data, Elasticsearch for search and indexing, and Cloudinary for media storage. Includes DTO validation, global exception handling, service-to-service communication, health checks, logging, and modular NestJS architecture.",
+      technologies: [
+        "NestJS",
+        "TypeScript",
+        "RabbitMQ",
+        "MongoDB",
+        "Elasticsearch",
+        "Cloudinary",
+        "Clerk",
+        "JWT",
+        "Docker",
+        "DTO Validation",
+      ],
+      links: [
+        {
+          type: "Source",
+          href: "https://github.com/ali-sorathiya64/nest-microservices",
+          icon: <Icons.github className="size-3" />,
+        },
+      ],
+      image: "/nestjs-microservices.png",
     },
     {
       title: "QuickAi – AI Content Creation Platform",
