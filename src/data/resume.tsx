@@ -77,8 +77,7 @@ export const DATA: DataType = {
     "Neon DB",
     "Vector DB",
     "Pinecone",
-    "S3-compatible Storage",
-    "Cloudinary",
+    "S3-compatible Storage"
   ],
 },
     {
