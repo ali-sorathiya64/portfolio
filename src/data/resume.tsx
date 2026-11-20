@@ -82,7 +82,7 @@ export const DATA: DataType = {
 },
     {
       category: "AI / Gen AI",
-      items: ["Gen AI", "RAG", "LangChain", "LangGraph", "MCP", "LLM Integration", "Claude"],
+      items: ["Gen AI", "RAG", "LangChain", "LangGraph", "MCP", "Tool-calling", "LLM Integration", "Claude"],
     },
     {
       category: "DevOps & Cloud",
