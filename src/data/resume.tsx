@@ -436,6 +436,7 @@ export const DATA: DataType = {
         "PostgreSQL",
         "Neon DB",
         "Docker",
+        "DTO Validation",
         "Swagger",
       ],
       links: [
