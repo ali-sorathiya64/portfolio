@@ -86,7 +86,7 @@ export const DATA: DataType = {
     },
     {
       category: "DevOps & Cloud",
-      items: ["Docker", "Docker Compose","Nginx","GitHub Actions", "CI/CD"],
+      items: ["Docker", "Docker Compose", "AWS", "Nginx","GitHub Actions", "CI/CD"],
     },
      {
       category: "Blockchain",
